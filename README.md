@@ -179,8 +179,15 @@ des_pos_y=widgets.FloatText(
     disabled=False
 )
 ```
+## Create publishers for changing the modality and sending goal coordinates
+```
+pubModality=rospy.Publisher('mode',Int32,queue_size=10) #publisher of 'mode' topic, sends user choice to other nodes
+pubGoalPos=rospy.Publisher('goalpos',Vector3,queue_size=10) #publisher of 'goalpos' topic, sends the desired position
+x=0.0
+y=0.0
+goals=[]
 
-
+```
 ## Description of the code for the Graphical Representation of the Robot's Odometry & Laser Scanner
 
 This part will demonstrates the graphical representation of the robot's behavior during the Simulation.
@@ -208,3 +215,8 @@ subScan = rospy.Subscriber('/scan', LaserScan, vis.clbk_scan) #subscription to '
 subStatus=rospy.Subscriber('/move_base/status',GoalStatusArray,vis.clbk_status) #subscription to '/move_base/status' topic
 subGoal=rospy.Subscriber('/move_base/goal',MoveBaseActionGoal,vis.clbk_goal) #subscription to '/move_base/goal' topic
 ```
+![Screenshot from 2023-02-20 18-24-35](https://user-images.githubusercontent.com/104999107/220169991-14833b05-f75d-4546-a2c2
+
+![Screenshot from 2023-02-20 18-24-42](https://user-images.githubusercontent.com/104999107/220170160-f4f321fc-09c9-4453-8c8c-8ad4afb1d4cd.png)
+-4bc9798e213d.png)
+
