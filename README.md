@@ -73,4 +73,102 @@ apt-get install ros-noetic-move-base
 
 
 
+The Jupyter user interface node is a super easy node. This is used to control the robot's behaviour. This implementation will demonstrates that robot's behavior such as switching to the different modalities such as:
 
+   1) Autonomously reach a x,y coordinate inserted by the user
+   2) Letting the user drive the robot with the keyboard
+   3) Letting the user drive the robot assisting them to avoid collisions
+
+Additionally, these modalities can also be managed by using this interface.
+
+First, imported the required libraries as given below:
+
+```
+from ipywidgets import Button, Layout, ButtonStyle, VBox, HBox, GridBox
+import ipywidgets as widgets
+import rospy
+import os
+import time
+import functools
+import numpy as np
+from std_msgs.msg import Int32, Bool, String, Float32
+from geometry_msgs.msg import Vector3
+from actionlib_msgs.msg import GoalStatusArray
+from move_base_msgs.msg import MoveBaseActionGoal
+import matplotlib.pyplot as plt
+from matplotlib.lines import Line2D
+from matplotlib.animation import FuncAnimation
+import tf
+from nav_msgs.msg import Odometry
+from sensor_msgs.msg import LaserScan
+from tf.transformations import quaternion_matrix
+
+```
+```
+rospy.init_node('jupyter')
+
+
+b1 = Button(description='First Modality',layout=Layout(width='auto', align="center", grid_area='b1'),style=ButtonStyle(button_color='lightblue'))
+b2 = Button(description='Second Modality',layout=Layout(width='auto', grid_area='b2'),style=ButtonStyle(button_color='moccasin'))
+b3 = Button(description='Third Modality',layout=Layout(width='auto', grid_area='b3'),style=ButtonStyle(button_color='salmon'))
+b4 = Button(description='Quit Modality',layout=Layout(height='auto', grid_area='b4'),style=ButtonStyle(button_color='salmon'))
+
+ok_btn=Button(description='OK',layout=Layout(width='auto', grid_area='ok'),style=ButtonStyle(button_color='salmon'))
+
+#Modality 2 and 3
+t1 = Button(description='Left',layout=Layout(width='auto', grid_area='t1'),style=ButtonStyle(button_color='lightblue'))
+t2 = Button(description='Forward',layout=Layout(width='auto', grid_area='t2'),style=ButtonStyle(button_color='moccasin'))
+t3 = Button(description='Right',layout=Layout(width='auto', grid_area='t3'),style=ButtonStyle(button_color='salmon'))
+t4 = Button(description='Stop Motors',layout=Layout(height='auto', grid_area='t4'),style=ButtonStyle(button_color='salmon'))
+t11 = Button(description='Front-Left',layout=Layout(width='auto', grid_area='t11'),style=ButtonStyle(button_color='lightblue'))
+t12 = Button(description='Front-Right',layout=Layout(width='auto', grid_area='t12'),style=ButtonStyle(button_color='moccasin'))
+t13 = Button(description='Back-Left',layout=Layout(width='auto', grid_area='t13'),style=ButtonStyle(button_color='lightblue'))
+t14 = Button(description='Back',layout=Layout(width='auto', grid_area='t14'),style=ButtonStyle(button_color='moccasin'))
+t15 = Button(description='Back-Right',layout=Layout(width='auto', grid_area='t15'),style=ButtonStyle(button_color='lightblue'))
+
+t5 = Button(description='Left ',layout=Layout(width='auto', align="center", grid_area='t5'),style=ButtonStyle(button_color='lightblue'))
+t6 = Button(description='Forward ',layout=Layout(width='auto', grid_area='t6'),style=ButtonStyle(button_color='moccasin'))
+t7 = Button(description='Right',layout=Layout(width='auto', grid_area='t7'),style=ButtonStyle(button_color='salmon'))
+t8 = Button(description='Stop Motors',layout=Layout(width='auto', grid_area='t8'),style=ButtonStyle(button_color='salmon'))
+t21 = Button(description='Front-Left',layout=Layout(width='auto', grid_area='t21'),style=ButtonStyle(button_color='lightblue'))
+t22 = Button(description='Front-Right',layout=Layout(width='auto', grid_area='t22'),style=ButtonStyle(button_color='moccasin'))
+
+tdecv=Button(description='Decrease Velocity ',layout=Layout(width='auto', align="center", grid_area='tdecv'),style=ButtonStyle(button_color='lightblue'))
+tincv=Button(description='Increase Velocity ',layout=Layout(width='auto', align="center", grid_area='tincv'),style=ButtonStyle(button_color='lightblue'))
+
+
+
+mb = {
+        'i':(1,0,0,0),
+        'o':(1,0,0,-1),
+        'j':(0,0,0,1),
+        'l':(0,0,0,-1),
+        'u':(1,0,0,1),
+        ',':(-1,0,0,0),
+        '.':(-1,0,0,1),
+        'm':(-1,0,0,-1),
+        
+    }
+
+speed=1.0
+incSpeed=1.1
+decSpeed=0.9
+
+
+from teleop import PublishThread
+repeat = rospy.get_param("~repeat_rate", 0.0)
+pub_thread = PublishThread(repeat)
+pub_thread.wait_for_subscribers()
+sub = rospy.Subscriber('/scan', LaserScan, clbk_laser) #subscription to /scan topic    
+
+des_pos_x=widgets.FloatText(
+    value=0.0,
+    description='x coordinate:',
+    disabled=False
+)
+des_pos_y=widgets.FloatText(
+    value=0.0,
+    description='y coordinate:',
+    disabled=False
+)
+```
