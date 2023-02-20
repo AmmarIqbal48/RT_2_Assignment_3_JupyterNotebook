@@ -32,6 +32,7 @@ Below is the figure which shows Notebook Server.
 
 
 
+![Screenshot_20230220_055531](https://user-images.githubusercontent.com/104999107/220174092-e5300b4e-05e9-42b7-aedd-1756934963df.png)
 
 
 ## Jupyter and ROS
