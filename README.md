@@ -83,6 +83,10 @@ Additionally, these modalities can also be managed by using this interface.
 
 First, imported the required libraries as given below:
 
+
+
+## Import Libraries
+
 ```
 from ipywidgets import Button, Layout, ButtonStyle, VBox, HBox, GridBox
 import ipywidgets as widgets
@@ -104,6 +108,9 @@ from sensor_msgs.msg import LaserScan
 from tf.transformations import quaternion_matrix
 
 ```
+
+## Initialize the node and the buttons for the UI
+
 ```
 rospy.init_node('jupyter')
 
