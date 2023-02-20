@@ -226,3 +226,17 @@ subGoal=rospy.Subscriber('/move_base/goal',MoveBaseActionGoal,vis.clbk_goal) #su
 ![Screenshot from 2023-02-20 18-24-42](https://user-images.githubusercontent.com/104999107/220170160-f4f321fc-09c9-4453-8c8c-8ad4afb1d4cd.png)
 
 
+## Conclusion and Improvements
+
+I'm satisfied with the final result, even if better improvements can be done. First of all some parameters can be changed since they may be not optimal. Having said that, there are some particular improvenments that I want to highlight:
+
+    In jupyter notebook data real time data is updating using %matplotlib widget but at some stage it's lagged and due to this data updation is lagged. This can be improve in further imporvement of the code.
+
+Below are the two improvements which is based on the project Software Architecture for Mobile Robot Control.
+
+    1) In the assisted driving mode, the robot avoid obstacles in the front/left/right related to its vision field, but since it can go also backwards it will inevitably crush on the back side, not avoiding the wall. Future improvements can be done, in order to avoid hitting the wall on the back side, probably using the geometry and the space of the environment.
+   
+    2) In the reach point node, we may compute the current position of the robot in the environment and match it to the goal position in order to have an instant feedback if the robot has reached the Point(x,y). The ROS topic base_scan/status takes a long time to control if the robot has reached the goal.
+
+
+
