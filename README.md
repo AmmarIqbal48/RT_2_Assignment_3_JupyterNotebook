@@ -215,7 +215,13 @@ subScan = rospy.Subscriber('/scan', LaserScan, vis.clbk_scan) #subscription to '
 subStatus=rospy.Subscriber('/move_base/status',GoalStatusArray,vis.clbk_status) #subscription to '/move_base/status' topic
 subGoal=rospy.Subscriber('/move_base/goal',MoveBaseActionGoal,vis.clbk_goal) #subscription to '/move_base/goal' topic
 ```
-![Screenshot from 2023-02-20 18-24-35](https://user-images.githubusercontent.com/104999107/220169991-14833b05-f75d-4546-a2c2
+![Screenshot from 2023-02-20 18-24-35](https://user-images.githubusercontent.com/104999107/220170330-e1acc38e-1939-4175-a180-d3919408de94.png)
+
+
+
+
+
+
 
 ![Screenshot from 2023-02-20 18-24-42](https://user-images.githubusercontent.com/104999107/220170160-f4f321fc-09c9-4453-8c8c-8ad4afb1d4cd.png)
 -4bc9798e213d.png)
