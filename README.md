@@ -16,6 +16,10 @@ This user interface should be able to control the project ROS RVIZ GAZEBO PYTHON
 ## Installation
 To create Jupyter Interface, Jupyter Notebook tool is required on your system. To install Jupyter follow the steps given below:
 
+```
 pip3 install jupyter bqplot pyyaml ipywidgets
+```
 
-
+```
+jupyter nbextension enable --py widgetsnbextension
+```
