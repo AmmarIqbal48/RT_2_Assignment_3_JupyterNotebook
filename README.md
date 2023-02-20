@@ -172,3 +172,32 @@ des_pos_y=widgets.FloatText(
     disabled=False
 )
 ```
+
+
+## Description of the code for the Graphical Representation of the Robot's Odometry & Laser Scanner
+
+This part will demonstrates the graphical representation of the robot's behavior during the Simulation.
+
+   1) The first graph will represents the laser scan on a polar graph representation
+   2) The second graph will represents the position described by the odometry topic of the robot. The graph will show the position of the robot in space with red dots.
+    
+
+Below is the function shows the plotting of the data of the robot's odometery and laser scanner.
+
+```
+colors=[]
+x_fromAni=[]
+y_fromAni=[]
+legend_elements = [Line2D([0], [0],marker='o', color='w', label='Not Achieved: 0',
+                          markerfacecolor='r', markersize=10),
+                   Line2D([0], [0], marker='o', color='w', label='Pending',
+                          markerfacecolor='y', markersize=10),
+                    Line2D([0], [0], marker='o', color='w', label='Achieved: 0',
+                          markerfacecolor='g', markersize=10)]
+
+vis = Visualiser(x,y,goals,colors,legend_elements) #instance of Visualiser class
+subOdom = rospy.Subscriber('/odom', Odometry, vis.clbk_odom) #subscription to '/odom' topic
+subScan = rospy.Subscriber('/scan', LaserScan, vis.clbk_scan) #subscription to '/scan' topic
+subStatus=rospy.Subscriber('/move_base/status',GoalStatusArray,vis.clbk_status) #subscription to '/move_base/status' topic
+subGoal=rospy.Subscriber('/move_base/goal',MoveBaseActionGoal,vis.clbk_goal) #subscription to '/move_base/goal' topic
+```
