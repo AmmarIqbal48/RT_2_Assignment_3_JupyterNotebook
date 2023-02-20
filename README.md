@@ -224,5 +224,5 @@ subGoal=rospy.Subscriber('/move_base/goal',MoveBaseActionGoal,vis.clbk_goal) #su
 
 
 ![Screenshot from 2023-02-20 18-24-42](https://user-images.githubusercontent.com/104999107/220170160-f4f321fc-09c9-4453-8c8c-8ad4afb1d4cd.png)
--4bc9798e213d.png)
+
 
