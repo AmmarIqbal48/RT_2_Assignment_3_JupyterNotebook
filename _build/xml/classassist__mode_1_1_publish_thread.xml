@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classassist__mode_1_1_publish_thread" kind="class" language="Python" prot="public">
+    <compoundname>assist_mode::PublishThread</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Thread</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classassist__mode_1_1_publish_thread_1a205bb93e7a8f5474b0b1bd2068b25eb0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>assist_mode.PublishThread::publisher</definition>
+        <argsstring></argsstring>
+        <name>publisher</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist_mode.py" line="156" column="1" bodyfile="scripts/assist_mode.py" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist__mode_1_1_publish_thread_1a514dda0393e02591c9ab61d5fe4ebf96" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>assist_mode.PublishThread::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist_mode.py" line="157" column="1" bodyfile="scripts/assist_mode.py" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist__mode_1_1_publish_thread_1a1f3344f353d34f014eeca0d1bc8b8631" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>assist_mode.PublishThread::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist_mode.py" line="158" column="1" bodyfile="scripts/assist_mode.py" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist__mode_1_1_publish_thread_1a00fb47d7c9c82e4353e57519283e38d3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>assist_mode.PublishThread::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist_mode.py" line="159" column="1" bodyfile="scripts/assist_mode.py" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist__mode_1_1_publish_thread_1aee50487ed4007282a68c8971c19d4992" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>assist_mode.PublishThread::th</definition>
+        <argsstring></argsstring>
+        <name>th</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist_mode.py" line="160" column="1" bodyfile="scripts/assist_mode.py" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist__mode_1_1_publish_thread_1a62aa8934c053a8600b423aef60677c99" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>assist_mode.PublishThread::speed</definition>
+        <argsstring></argsstring>
+        <name>speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist_mode.py" line="161" column="1" bodyfile="scripts/assist_mode.py" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist__mode_1_1_publish_thread_1a5e5630780d23629f9026d7085830681e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>assist_mode.PublishThread::turn</definition>
+        <argsstring></argsstring>
+        <name>turn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist_mode.py" line="162" column="1" bodyfile="scripts/assist_mode.py" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist__mode_1_1_publish_thread_1aa461a90d99eaabddbe4590918684ab94" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>assist_mode.PublishThread::condition</definition>
+        <argsstring></argsstring>
+        <name>condition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist_mode.py" line="163" column="1" bodyfile="scripts/assist_mode.py" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist__mode_1_1_publish_thread_1a71377da25897b0db84396c714616313f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>assist_mode.PublishThread::done</definition>
+        <argsstring></argsstring>
+        <name>done</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist_mode.py" line="164" column="1" bodyfile="scripts/assist_mode.py" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist__mode_1_1_publish_thread_1ac5b304658bce83c4ac1b3e008eda390c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>assist_mode.PublishThread::timeout</definition>
+        <argsstring></argsstring>
+        <name>timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist_mode.py" line="169" column="1" bodyfile="scripts/assist_mode.py" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classassist__mode_1_1_publish_thread_1a27d74da0c13dc8ed7378f2b958840a55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def assist_mode.PublishThread.__init__</definition>
+        <argsstring>(self, rate)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>rate</type>
+          <defname>rate</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist_mode.py" line="154" column="1" bodyfile="scripts/assist_mode.py" bodystart="154" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classassist__mode_1_1_publish_thread_1a5c173223de28096314c5ad81de80062d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def assist_mode.PublishThread.wait_for_subscribers</definition>
+        <argsstring>(self)</argsstring>
+        <name>wait_for_subscribers</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist_mode.py" line="175" column="1" bodyfile="scripts/assist_mode.py" bodystart="175" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classassist__mode_1_1_publish_thread_1a629df81921b009b16672fcd405db7fcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def assist_mode.PublishThread.update</definition>
+        <argsstring>(self, x, y, z, th, speed, turn)</argsstring>
+        <name>update</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+        </param>
+        <param>
+          <type>z</type>
+          <defname>z</defname>
+        </param>
+        <param>
+          <type>th</type>
+          <defname>th</defname>
+        </param>
+        <param>
+          <type>speed</type>
+          <defname>speed</defname>
+        </param>
+        <param>
+          <type>turn</type>
+          <defname>turn</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist_mode.py" line="186" column="1" bodyfile="scripts/assist_mode.py" bodystart="186" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classassist__mode_1_1_publish_thread_1a2c5defb426e303c6e3741880b9e1b725" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def assist_mode.PublishThread.stop</definition>
+        <argsstring>(self)</argsstring>
+        <name>stop</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist_mode.py" line="198" column="1" bodyfile="scripts/assist_mode.py" bodystart="198" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classassist__mode_1_1_publish_thread_1a56fcef008d989bbabc83c4078b69a959" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def assist_mode.PublishThread.my_stop</definition>
+        <argsstring>(self)</argsstring>
+        <name>my_stop</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist_mode.py" line="203" column="1" bodyfile="scripts/assist_mode.py" bodystart="203" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classassist__mode_1_1_publish_thread_1a8cfe9752969ef05ac708949a9c4e8f12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def assist_mode.PublishThread.run</definition>
+        <argsstring>(self)</argsstring>
+        <name>run</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist_mode.py" line="214" column="1" bodyfile="scripts/assist_mode.py" bodystart="214" bodyend="243"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>threading::Thread</label>
+      </node>
+      <node id="1">
+        <label>assist_mode.PublishThread</label>
+        <link refid="classassist__mode_1_1_publish_thread"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>threading::Thread</label>
+      </node>
+      <node id="1">
+        <label>assist_mode.PublishThread</label>
+        <link refid="classassist__mode_1_1_publish_thread"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="scripts/assist_mode.py" line="153" column="1" bodyfile="scripts/assist_mode.py" bodystart="153" bodyend="244"/>
+    <listofallmembers>
+      <member refid="classassist__mode_1_1_publish_thread_1a27d74da0c13dc8ed7378f2b958840a55" prot="public" virt="non-virtual"><scope>assist_mode::PublishThread</scope><name>__init__</name></member>
+      <member refid="classassist__mode_1_1_publish_thread_1aa461a90d99eaabddbe4590918684ab94" prot="public" virt="non-virtual"><scope>assist_mode::PublishThread</scope><name>condition</name></member>
+      <member refid="classassist__mode_1_1_publish_thread_1a71377da25897b0db84396c714616313f" prot="public" virt="non-virtual"><scope>assist_mode::PublishThread</scope><name>done</name></member>
+      <member refid="classassist__mode_1_1_publish_thread_1a56fcef008d989bbabc83c4078b69a959" prot="public" virt="non-virtual"><scope>assist_mode::PublishThread</scope><name>my_stop</name></member>
+      <member refid="classassist__mode_1_1_publish_thread_1a205bb93e7a8f5474b0b1bd2068b25eb0" prot="public" virt="non-virtual"><scope>assist_mode::PublishThread</scope><name>publisher</name></member>
+      <member refid="classassist__mode_1_1_publish_thread_1a8cfe9752969ef05ac708949a9c4e8f12" prot="public" virt="non-virtual"><scope>assist_mode::PublishThread</scope><name>run</name></member>
+      <member refid="classassist__mode_1_1_publish_thread_1a62aa8934c053a8600b423aef60677c99" prot="public" virt="non-virtual"><scope>assist_mode::PublishThread</scope><name>speed</name></member>
+      <member refid="classassist__mode_1_1_publish_thread_1a2c5defb426e303c6e3741880b9e1b725" prot="public" virt="non-virtual"><scope>assist_mode::PublishThread</scope><name>stop</name></member>
+      <member refid="classassist__mode_1_1_publish_thread_1aee50487ed4007282a68c8971c19d4992" prot="public" virt="non-virtual"><scope>assist_mode::PublishThread</scope><name>th</name></member>
+      <member refid="classassist__mode_1_1_publish_thread_1ac5b304658bce83c4ac1b3e008eda390c" prot="public" virt="non-virtual"><scope>assist_mode::PublishThread</scope><name>timeout</name></member>
+      <member refid="classassist__mode_1_1_publish_thread_1a5e5630780d23629f9026d7085830681e" prot="public" virt="non-virtual"><scope>assist_mode::PublishThread</scope><name>turn</name></member>
+      <member refid="classassist__mode_1_1_publish_thread_1a629df81921b009b16672fcd405db7fcd" prot="public" virt="non-virtual"><scope>assist_mode::PublishThread</scope><name>update</name></member>
+      <member refid="classassist__mode_1_1_publish_thread_1a5c173223de28096314c5ad81de80062d" prot="public" virt="non-virtual"><scope>assist_mode::PublishThread</scope><name>wait_for_subscribers</name></member>
+      <member refid="classassist__mode_1_1_publish_thread_1a514dda0393e02591c9ab61d5fe4ebf96" prot="public" virt="non-virtual"><scope>assist_mode::PublishThread</scope><name>x</name></member>
+      <member refid="classassist__mode_1_1_publish_thread_1a1f3344f353d34f014eeca0d1bc8b8631" prot="public" virt="non-virtual"><scope>assist_mode::PublishThread</scope><name>y</name></member>
+      <member refid="classassist__mode_1_1_publish_thread_1a00fb47d7c9c82e4353e57519283e38d3" prot="public" virt="non-virtual"><scope>assist_mode::PublishThread</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

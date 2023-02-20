@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classassist_1_1_publish_thread" kind="class" language="Python" prot="public">
+    <compoundname>assist::PublishThread</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Thread</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classassist_1_1_publish_thread_1aa8098b0976f39d5b5f610d3a46b148dc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>assist.PublishThread::publisher</definition>
+        <argsstring></argsstring>
+        <name>publisher</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="156" column="1" bodyfile="scripts/assist.py" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist_1_1_publish_thread_1ac3941d485f7f1c5fd387c9951db6be27" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>assist.PublishThread::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="157" column="1" bodyfile="scripts/assist.py" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist_1_1_publish_thread_1a47f40d24ac552c3506b35c0a7f21e367" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>assist.PublishThread::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="158" column="1" bodyfile="scripts/assist.py" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist_1_1_publish_thread_1ab8ba9d8e84736e49926525dd5c745194" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>assist.PublishThread::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="159" column="1" bodyfile="scripts/assist.py" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist_1_1_publish_thread_1a20ca04dda9c606261844a5793b3e19fb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>assist.PublishThread::th</definition>
+        <argsstring></argsstring>
+        <name>th</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="160" column="1" bodyfile="scripts/assist.py" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist_1_1_publish_thread_1a75c42d7bb120b89e13405f3b0481028d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>assist.PublishThread::speed</definition>
+        <argsstring></argsstring>
+        <name>speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="161" column="1" bodyfile="scripts/assist.py" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist_1_1_publish_thread_1a3f34da0c804e14d7bebc82692656258f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>assist.PublishThread::turn</definition>
+        <argsstring></argsstring>
+        <name>turn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="162" column="1" bodyfile="scripts/assist.py" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist_1_1_publish_thread_1abd27eac97e2dc0ce9067c437c2ac1792" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>assist.PublishThread::condition</definition>
+        <argsstring></argsstring>
+        <name>condition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="163" column="1" bodyfile="scripts/assist.py" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist_1_1_publish_thread_1a0ecb403bdf81c7565d73995e9afbbf6a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>assist.PublishThread::done</definition>
+        <argsstring></argsstring>
+        <name>done</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="164" column="1" bodyfile="scripts/assist.py" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist_1_1_publish_thread_1a27e78a65d8b1a21dd662c3c4fe5ba5be" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>assist.PublishThread::timeout</definition>
+        <argsstring></argsstring>
+        <name>timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="169" column="1" bodyfile="scripts/assist.py" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classassist_1_1_publish_thread_1a1243c7fad48854187a4424907f7d2ec5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def assist.PublishThread.__init__</definition>
+        <argsstring>(self, rate)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>rate</type>
+          <defname>rate</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="154" column="1" bodyfile="scripts/assist.py" bodystart="154" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classassist_1_1_publish_thread_1abac7e736e13a90223a981f3040d99f0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def assist.PublishThread.wait_for_subscribers</definition>
+        <argsstring>(self)</argsstring>
+        <name>wait_for_subscribers</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="175" column="1" bodyfile="scripts/assist.py" bodystart="175" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classassist_1_1_publish_thread_1afb968d2fb0585691bf40403109bd2ac2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def assist.PublishThread.update</definition>
+        <argsstring>(self, x, y, z, th, speed, turn)</argsstring>
+        <name>update</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+        </param>
+        <param>
+          <type>z</type>
+          <defname>z</defname>
+        </param>
+        <param>
+          <type>th</type>
+          <defname>th</defname>
+        </param>
+        <param>
+          <type>speed</type>
+          <defname>speed</defname>
+        </param>
+        <param>
+          <type>turn</type>
+          <defname>turn</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="186" column="1" bodyfile="scripts/assist.py" bodystart="186" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classassist_1_1_publish_thread_1a22b1ce8722769abeca4965e772dc86ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def assist.PublishThread.stop</definition>
+        <argsstring>(self)</argsstring>
+        <name>stop</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="198" column="1" bodyfile="scripts/assist.py" bodystart="198" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classassist_1_1_publish_thread_1ae140bb87fe456b1b1fd1924631c8f48f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def assist.PublishThread.my_stop</definition>
+        <argsstring>(self)</argsstring>
+        <name>my_stop</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="203" column="1" bodyfile="scripts/assist.py" bodystart="203" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classassist_1_1_publish_thread_1ae736c88e8aa0fd6467c88cd6d87e5ba2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def assist.PublishThread.run</definition>
+        <argsstring>(self)</argsstring>
+        <name>run</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="214" column="1" bodyfile="scripts/assist.py" bodystart="214" bodyend="243"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>threading::Thread</label>
+      </node>
+      <node id="1">
+        <label>assist.PublishThread</label>
+        <link refid="classassist_1_1_publish_thread"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>threading::Thread</label>
+      </node>
+      <node id="1">
+        <label>assist.PublishThread</label>
+        <link refid="classassist_1_1_publish_thread"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="scripts/assist.py" line="153" column="1" bodyfile="scripts/assist.py" bodystart="153" bodyend="244"/>
+    <listofallmembers>
+      <member refid="classassist_1_1_publish_thread_1a1243c7fad48854187a4424907f7d2ec5" prot="public" virt="non-virtual"><scope>assist::PublishThread</scope><name>__init__</name></member>
+      <member refid="classassist_1_1_publish_thread_1abd27eac97e2dc0ce9067c437c2ac1792" prot="public" virt="non-virtual"><scope>assist::PublishThread</scope><name>condition</name></member>
+      <member refid="classassist_1_1_publish_thread_1a0ecb403bdf81c7565d73995e9afbbf6a" prot="public" virt="non-virtual"><scope>assist::PublishThread</scope><name>done</name></member>
+      <member refid="classassist_1_1_publish_thread_1ae140bb87fe456b1b1fd1924631c8f48f" prot="public" virt="non-virtual"><scope>assist::PublishThread</scope><name>my_stop</name></member>
+      <member refid="classassist_1_1_publish_thread_1aa8098b0976f39d5b5f610d3a46b148dc" prot="public" virt="non-virtual"><scope>assist::PublishThread</scope><name>publisher</name></member>
+      <member refid="classassist_1_1_publish_thread_1ae736c88e8aa0fd6467c88cd6d87e5ba2" prot="public" virt="non-virtual"><scope>assist::PublishThread</scope><name>run</name></member>
+      <member refid="classassist_1_1_publish_thread_1a75c42d7bb120b89e13405f3b0481028d" prot="public" virt="non-virtual"><scope>assist::PublishThread</scope><name>speed</name></member>
+      <member refid="classassist_1_1_publish_thread_1a22b1ce8722769abeca4965e772dc86ad" prot="public" virt="non-virtual"><scope>assist::PublishThread</scope><name>stop</name></member>
+      <member refid="classassist_1_1_publish_thread_1a20ca04dda9c606261844a5793b3e19fb" prot="public" virt="non-virtual"><scope>assist::PublishThread</scope><name>th</name></member>
+      <member refid="classassist_1_1_publish_thread_1a27e78a65d8b1a21dd662c3c4fe5ba5be" prot="public" virt="non-virtual"><scope>assist::PublishThread</scope><name>timeout</name></member>
+      <member refid="classassist_1_1_publish_thread_1a3f34da0c804e14d7bebc82692656258f" prot="public" virt="non-virtual"><scope>assist::PublishThread</scope><name>turn</name></member>
+      <member refid="classassist_1_1_publish_thread_1afb968d2fb0585691bf40403109bd2ac2" prot="public" virt="non-virtual"><scope>assist::PublishThread</scope><name>update</name></member>
+      <member refid="classassist_1_1_publish_thread_1abac7e736e13a90223a981f3040d99f0c" prot="public" virt="non-virtual"><scope>assist::PublishThread</scope><name>wait_for_subscribers</name></member>
+      <member refid="classassist_1_1_publish_thread_1ac3941d485f7f1c5fd387c9951db6be27" prot="public" virt="non-virtual"><scope>assist::PublishThread</scope><name>x</name></member>
+      <member refid="classassist_1_1_publish_thread_1a47f40d24ac552c3506b35c0a7f21e367" prot="public" virt="non-virtual"><scope>assist::PublishThread</scope><name>y</name></member>
+      <member refid="classassist_1_1_publish_thread_1ab8ba9d8e84736e49926525dd5c745194" prot="public" virt="non-virtual"><scope>assist::PublishThread</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

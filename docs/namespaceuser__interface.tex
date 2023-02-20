@@ -1,0 +1,58 @@
+\hypertarget{namespaceuser__interface}{}\doxysection{user\+\_\+interface Namespace Reference}
+\label{namespaceuser__interface}\index{user\_interface@{user\_interface}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classuser__interface_1_1colors}{colors}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceuser__interface_ae3d4a6a05731a62b3b77cd655a274e4e}{timeout\+\_\+callback}} (data)
+\item 
+def \mbox{\hyperlink{namespaceuser__interface_ac26bdb296b6776907b72c17ce5a1b24a}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceuser__interface_a2f76621b90797b5b6bba1cd22bc8c870}\label{namespaceuser__interface_a2f76621b90797b5b6bba1cd22bc8c870}} 
+bool {\bfseries is\+Timeout} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}.. module:: user_interface
+:platform: Unix
+:synopsis: Python module for the user Interface
+.. moduleauthor:: Ammar Iqbal
+
+Subscribes to:
+/timeout to check if the timeout for the autonomous driving mode has expired
+
+Publishes to:
+/mode to start a new modality
+/goalpos to send the coordinates of the goal
+
+The User Interface is the node that lets the user switch between the modalities, including the 'idle' one (i.e. when no mode is active). 
+The command is given by a user keyboard input and it is sent to the other nodes using ROS topics.\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceuser__interface_ac26bdb296b6776907b72c17ce5a1b24a}\label{namespaceuser__interface_ac26bdb296b6776907b72c17ce5a1b24a}} 
+\index{user\_interface@{user\_interface}!main@{main}}
+\index{main@{main}!user\_interface@{user\_interface}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def user\+\_\+interface.\+main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Main Function: constantly asks for the user to press a certain key to start or change a modality. When the user presses a proper key (i.e '0','1','2','3','4'), the corresping value will be pushibled on /mode topic. In 'Goal Reaching' mode, a message with the goal position will be also published on /goalpos topic  \end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceuser__interface_ae3d4a6a05731a62b3b77cd655a274e4e}\label{namespaceuser__interface_ae3d4a6a05731a62b3b77cd655a274e4e}} 
+\index{user\_interface@{user\_interface}!timeout\_callback@{timeout\_callback}}
+\index{timeout\_callback@{timeout\_callback}!user\_interface@{user\_interface}}
+\doxysubsubsection{\texorpdfstring{timeout\_callback()}{timeout\_callback()}}
+{\footnotesize\ttfamily def user\+\_\+interface.\+timeout\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Callback function for the timer
+
+Args:
+    data(bool): variable to notice if the timeout (for mode 1) has expired\end{DoxyVerb}
+ 

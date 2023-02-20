@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classmode__2_1_1colors" kind="class" language="Python" prot="public">
+    <compoundname>mode_2::colors</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classmode__2_1_1colors_1ade7d929e6cf08b42b01371d3f08930f5" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string mode_2.colors::PINK</definition>
+        <argsstring></argsstring>
+        <name>PINK</name>
+        <initializer>=  &apos;\033[95m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="40" column="1" bodyfile="scripts/mode_2.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmode__2_1_1colors_1a91dcc9ace1c717dc5d655fe4420d4b6e" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string mode_2.colors::BLUE</definition>
+        <argsstring></argsstring>
+        <name>BLUE</name>
+        <initializer>=  &apos;\033[94m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="41" column="1" bodyfile="scripts/mode_2.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmode__2_1_1colors_1a721cfdbe6437025c109e7279599d45bf" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string mode_2.colors::CYAN</definition>
+        <argsstring></argsstring>
+        <name>CYAN</name>
+        <initializer>=  &apos;\033[96m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="42" column="1" bodyfile="scripts/mode_2.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmode__2_1_1colors_1a254f52362e84cf83c6558104f34f02a8" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string mode_2.colors::GREEN</definition>
+        <argsstring></argsstring>
+        <name>GREEN</name>
+        <initializer>=  &apos;\033[92m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="43" column="1" bodyfile="scripts/mode_2.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmode__2_1_1colors_1a0523b3dfa556ea5865bb0bf417030015" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string mode_2.colors::YELLOW</definition>
+        <argsstring></argsstring>
+        <name>YELLOW</name>
+        <initializer>=  &apos;\033[93m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="44" column="1" bodyfile="scripts/mode_2.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmode__2_1_1colors_1a633c7f4fb8d6f1f306c7cb719c6739bc" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string mode_2.colors::RED</definition>
+        <argsstring></argsstring>
+        <name>RED</name>
+        <initializer>=  &apos;\033[91m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="45" column="1" bodyfile="scripts/mode_2.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmode__2_1_1colors_1ac265ab7b7ef558830c89927612dce2f9" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string mode_2.colors::ORANGE</definition>
+        <argsstring></argsstring>
+        <name>ORANGE</name>
+        <initializer>=  &apos;\033[33m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="46" column="1" bodyfile="scripts/mode_2.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmode__2_1_1colors_1a13ed0cf3455de22fad260fdfaa16fea1" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string mode_2.colors::PURPLE</definition>
+        <argsstring></argsstring>
+        <name>PURPLE</name>
+        <initializer>=  &apos;\033[35m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="47" column="1" bodyfile="scripts/mode_2.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmode__2_1_1colors_1a75c12a8e7da949b3a26c973c6b8fe871" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string mode_2.colors::ENDC</definition>
+        <argsstring></argsstring>
+        <name>ENDC</name>
+        <initializer>=  &apos;\033[0m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="48" column="1" bodyfile="scripts/mode_2.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmode__2_1_1colors_1ac2a719275cb737decc717b027e0e7ec1" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string mode_2.colors::BOLD</definition>
+        <argsstring></argsstring>
+        <name>BOLD</name>
+        <initializer>=  &apos;\033[1m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="49" column="1" bodyfile="scripts/mode_2.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmode__2_1_1colors_1a60d924280d5e4d6130b53ae37191653b" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string mode_2.colors::UNDERLINE</definition>
+        <argsstring></argsstring>
+        <name>UNDERLINE</name>
+        <initializer>=  &apos;\033[4m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="50" column="1" bodyfile="scripts/mode_2.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class used for printing colors on the terminal
+</verbatim> </para>
+    </detaileddescription>
+    <location file="scripts/mode_2.py" line="36" column="1" bodyfile="scripts/mode_2.py" bodystart="36" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classmode__2_1_1colors_1a91dcc9ace1c717dc5d655fe4420d4b6e" prot="public" virt="non-virtual"><scope>mode_2::colors</scope><name>BLUE</name></member>
+      <member refid="classmode__2_1_1colors_1ac2a719275cb737decc717b027e0e7ec1" prot="public" virt="non-virtual"><scope>mode_2::colors</scope><name>BOLD</name></member>
+      <member refid="classmode__2_1_1colors_1a721cfdbe6437025c109e7279599d45bf" prot="public" virt="non-virtual"><scope>mode_2::colors</scope><name>CYAN</name></member>
+      <member refid="classmode__2_1_1colors_1a75c12a8e7da949b3a26c973c6b8fe871" prot="public" virt="non-virtual"><scope>mode_2::colors</scope><name>ENDC</name></member>
+      <member refid="classmode__2_1_1colors_1a254f52362e84cf83c6558104f34f02a8" prot="public" virt="non-virtual"><scope>mode_2::colors</scope><name>GREEN</name></member>
+      <member refid="classmode__2_1_1colors_1ac265ab7b7ef558830c89927612dce2f9" prot="public" virt="non-virtual"><scope>mode_2::colors</scope><name>ORANGE</name></member>
+      <member refid="classmode__2_1_1colors_1ade7d929e6cf08b42b01371d3f08930f5" prot="public" virt="non-virtual"><scope>mode_2::colors</scope><name>PINK</name></member>
+      <member refid="classmode__2_1_1colors_1a13ed0cf3455de22fad260fdfaa16fea1" prot="public" virt="non-virtual"><scope>mode_2::colors</scope><name>PURPLE</name></member>
+      <member refid="classmode__2_1_1colors_1a633c7f4fb8d6f1f306c7cb719c6739bc" prot="public" virt="non-virtual"><scope>mode_2::colors</scope><name>RED</name></member>
+      <member refid="classmode__2_1_1colors_1a60d924280d5e4d6130b53ae37191653b" prot="public" virt="non-virtual"><scope>mode_2::colors</scope><name>UNDERLINE</name></member>
+      <member refid="classmode__2_1_1colors_1a0523b3dfa556ea5865bb0bf417030015" prot="public" virt="non-virtual"><scope>mode_2::colors</scope><name>YELLOW</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

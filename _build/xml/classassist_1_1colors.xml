@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classassist_1_1colors" kind="class" language="Python" prot="public">
+    <compoundname>assist::colors</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classassist_1_1colors_1a6a8e2c46b7dd4258ba2c553d05298efc" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string assist.colors::PINK</definition>
+        <argsstring></argsstring>
+        <name>PINK</name>
+        <initializer>=  &apos;\033[95m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="138" column="1" bodyfile="scripts/assist.py" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist_1_1colors_1a0d82460487448b6b688b2e321af269b9" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string assist.colors::BLUE</definition>
+        <argsstring></argsstring>
+        <name>BLUE</name>
+        <initializer>=  &apos;\033[94m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="139" column="1" bodyfile="scripts/assist.py" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist_1_1colors_1a82edcd8a8ddff8ff524bfc6d918876b5" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string assist.colors::CYAN</definition>
+        <argsstring></argsstring>
+        <name>CYAN</name>
+        <initializer>=  &apos;\033[96m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="140" column="1" bodyfile="scripts/assist.py" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist_1_1colors_1a81604475c610635decd6aaaa13875b5d" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string assist.colors::GREEN</definition>
+        <argsstring></argsstring>
+        <name>GREEN</name>
+        <initializer>=  &apos;\033[92m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="141" column="1" bodyfile="scripts/assist.py" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist_1_1colors_1a7e7e2d99c704cf5a2b394663bda2a6f9" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string assist.colors::YELLOW</definition>
+        <argsstring></argsstring>
+        <name>YELLOW</name>
+        <initializer>=  &apos;\033[93m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="142" column="1" bodyfile="scripts/assist.py" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist_1_1colors_1aa71d55c783c8bb4b344ac5399a791cc4" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string assist.colors::RED</definition>
+        <argsstring></argsstring>
+        <name>RED</name>
+        <initializer>=  &apos;\033[91m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="143" column="1" bodyfile="scripts/assist.py" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist_1_1colors_1a23041e5caf65fdee1ab03f0c17182062" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string assist.colors::ORANGE</definition>
+        <argsstring></argsstring>
+        <name>ORANGE</name>
+        <initializer>=  &apos;\033[33m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="144" column="1" bodyfile="scripts/assist.py" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist_1_1colors_1ad7d07243d0822fef72a1ebcf35871137" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string assist.colors::PURPLE</definition>
+        <argsstring></argsstring>
+        <name>PURPLE</name>
+        <initializer>=  &apos;\033[35m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="145" column="1" bodyfile="scripts/assist.py" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist_1_1colors_1a56dfa28908717675f94c2d3648ae6117" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string assist.colors::ENDC</definition>
+        <argsstring></argsstring>
+        <name>ENDC</name>
+        <initializer>=  &apos;\033[0m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="147" column="1" bodyfile="scripts/assist.py" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist_1_1colors_1abcd178087aead8fb7092a46264731c18" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string assist.colors::BOLD</definition>
+        <argsstring></argsstring>
+        <name>BOLD</name>
+        <initializer>=  &apos;\033[1m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="148" column="1" bodyfile="scripts/assist.py" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classassist_1_1colors_1acabfab42474b2500801587f6ed39e6fd" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string assist.colors::UNDERLINE</definition>
+        <argsstring></argsstring>
+        <name>UNDERLINE</name>
+        <initializer>=  &apos;\033[4m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="149" column="1" bodyfile="scripts/assist.py" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class used for printing colors on the terminal
+</verbatim> </para>
+    </detaileddescription>
+    <location file="scripts/assist.py" line="134" column="1" bodyfile="scripts/assist.py" bodystart="134" bodyend="153"/>
+    <listofallmembers>
+      <member refid="classassist_1_1colors_1a0d82460487448b6b688b2e321af269b9" prot="public" virt="non-virtual"><scope>assist::colors</scope><name>BLUE</name></member>
+      <member refid="classassist_1_1colors_1abcd178087aead8fb7092a46264731c18" prot="public" virt="non-virtual"><scope>assist::colors</scope><name>BOLD</name></member>
+      <member refid="classassist_1_1colors_1a82edcd8a8ddff8ff524bfc6d918876b5" prot="public" virt="non-virtual"><scope>assist::colors</scope><name>CYAN</name></member>
+      <member refid="classassist_1_1colors_1a56dfa28908717675f94c2d3648ae6117" prot="public" virt="non-virtual"><scope>assist::colors</scope><name>ENDC</name></member>
+      <member refid="classassist_1_1colors_1a81604475c610635decd6aaaa13875b5d" prot="public" virt="non-virtual"><scope>assist::colors</scope><name>GREEN</name></member>
+      <member refid="classassist_1_1colors_1a23041e5caf65fdee1ab03f0c17182062" prot="public" virt="non-virtual"><scope>assist::colors</scope><name>ORANGE</name></member>
+      <member refid="classassist_1_1colors_1a6a8e2c46b7dd4258ba2c553d05298efc" prot="public" virt="non-virtual"><scope>assist::colors</scope><name>PINK</name></member>
+      <member refid="classassist_1_1colors_1ad7d07243d0822fef72a1ebcf35871137" prot="public" virt="non-virtual"><scope>assist::colors</scope><name>PURPLE</name></member>
+      <member refid="classassist_1_1colors_1aa71d55c783c8bb4b344ac5399a791cc4" prot="public" virt="non-virtual"><scope>assist::colors</scope><name>RED</name></member>
+      <member refid="classassist_1_1colors_1acabfab42474b2500801587f6ed39e6fd" prot="public" virt="non-virtual"><scope>assist::colors</scope><name>UNDERLINE</name></member>
+      <member refid="classassist_1_1colors_1a7e7e2d99c704cf5a2b394663bda2a6f9" prot="public" virt="non-virtual"><scope>assist::colors</scope><name>YELLOW</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespaceuser__interface" kind="namespace" language="Python">
+    <compoundname>user_interface</compoundname>
+    <innerclass refid="classuser__interface_1_1colors" prot="public">user_interface::colors</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceuser__interface_1a2f76621b90797b5b6bba1cd22bc8c870" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool user_interface.isTimeout</definition>
+        <argsstring></argsstring>
+        <name>isTimeout</name>
+        <initializer>= False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/user_interface.py" line="25" column="1" bodyfile="scripts/user_interface.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceuser__interface_1ae3d4a6a05731a62b3b77cd655a274e4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def user_interface.timeout_callback</definition>
+        <argsstring>(data)</argsstring>
+        <name>timeout_callback</name>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Callback function for the timer
+
+Args:
+    data(bool): variable to notice if the timeout (for mode 1) has expired</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/user_interface.py" line="44" column="1" bodyfile="scripts/user_interface.py" bodystart="44" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceuser__interface_1ac26bdb296b6776907b72c17ce5a1b24a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def user_interface.main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Main Function: constantly asks for the user to press a certain key to start or change a modality. When the user presses a proper key (i.e &apos;0&apos;,&apos;1&apos;,&apos;2&apos;,&apos;3&apos;,&apos;4&apos;), the corresping value will be pushibled on /mode topic. In &apos;Goal Reaching&apos; mode, a message with the goal position will be also published on /goalpos topic  </verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/user_interface.py" line="57" column="1" bodyfile="scripts/user_interface.py" bodystart="57" bodyend="125"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>.. module:: user_interface
+:platform: Unix
+:synopsis: Python module for the user Interface
+.. moduleauthor:: Ammar Iqbal
+
+Subscribes to:
+/timeout to check if the timeout for the autonomous driving mode has expired
+
+Publishes to:
+/mode to start a new modality
+/goalpos to send the coordinates of the goal
+
+The User Interface is the node that lets the user switch between the modalities, including the &apos;idle&apos; one (i.e. when no mode is active). 
+The command is given by a user keyboard input and it is sent to the other nodes using ROS topics.</verbatim> </para>
+    </detaileddescription>
+    <location file="scripts/user_interface.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

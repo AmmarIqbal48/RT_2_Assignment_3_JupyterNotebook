@@ -1,0 +1,394 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespaceassist" kind="namespace" language="Python">
+    <compoundname>assist</compoundname>
+    <innerclass refid="classassist_1_1colors" prot="public">assist::colors</innerclass>
+    <innerclass refid="classassist_1_1_publish_thread" prot="public">assist::PublishThread</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceassist_1adda323088ef500c408342f4eeb24fa83" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string assist.msg1</definition>
+        <argsstring></argsstring>
+        <name>msg1</name>
+        <initializer>=  &quot;&quot;&quot;
+- - -  NOT ASSISTED  - - -
+- - - MANUAL DRIVING - - -
+--------------------------
+Moving around:
+   u    i    o
+   j    k    l
+   m    ,    .
+
+For Holonomic mode (strafing), hold down the shift key:
+---------------------------
+   U    I    O
+   J    K    L
+   M    &lt;    &gt;
+
+t : up (+z)
+b : down (-z)
+
+anything else : stop
+
+q/z : increase/decrease max speeds by 10%
+w/x : increase/decrease only linear speed by 10%
+e/c : increase/decrease only angular speed by 10%
+
+PRESS &apos;p&apos; TO QUIT THE MODE AND RETURN IN &apos;IDLE&apos; STATUS
+
+&quot;&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="39" column="1" bodyfile="scripts/assist.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceassist_1a05a6de33cc4df972b75e2cc694ba96e4" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary assist.moveBindings_mode2</definition>
+        <argsstring></argsstring>
+        <name>moveBindings_mode2</name>
+        <initializer>=  {
+        &apos;i&apos;:(1,0,0,0),
+        &apos;o&apos;:(1,0,0,-1),
+        &apos;j&apos;:(0,0,0,1),
+        &apos;l&apos;:(0,0,0,-1),
+        &apos;u&apos;:(1,0,0,1),
+        &apos;,&apos;:(-1,0,0,0),
+        &apos;.&apos;:(-1,0,0,1),
+        &apos;m&apos;:(-1,0,0,-1),
+        &apos;O&apos;:(1,-1,0,0),
+        &apos;I&apos;:(1,0,0,0),
+        &apos;J&apos;:(0,1,0,0),
+        &apos;L&apos;:(0,-1,0,0),
+        &apos;U&apos;:(1,1,0,0),
+        &apos;&lt;&apos;:(-1,0,0,0),
+        &apos;&gt;&apos;:(-1,-1,0,0),
+        &apos;M&apos;:(-1,1,0,0),
+        &apos;t&apos;:(0,0,1,0),
+        &apos;b&apos;:(0,0,-1,0),
+        
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="67" column="1" bodyfile="scripts/assist.py" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceassist_1a2b46b0bf181c2eb9c85daa80400e2dd1" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary assist.speedBindings</definition>
+        <argsstring></argsstring>
+        <name>speedBindings</name>
+        <initializer>= {
+        &apos;q&apos;:(1.1,1.1),
+        &apos;z&apos;:(.9,.9),
+        &apos;w&apos;:(1.1,1),
+        &apos;x&apos;:(.9,1),
+        &apos;e&apos;:(1,1.1),
+        &apos;c&apos;:(1,.9),
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="89" column="1" bodyfile="scripts/assist.py" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceassist_1a64d977d3fb39ed0340248a47c73f365b" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string assist.msg2</definition>
+        <argsstring></argsstring>
+        <name>msg2</name>
+        <initializer>=  &quot;&quot;&quot;
+- - - -  ASSISTED  - - - -
+- - - MANUAL DRIVING - - -
+--------------------------
+Moving around:
+       i    
+   j   k    l
+
+q/z : increase/decrease max speeds by 10%
+w/x : increase/decrease only linear speed by 10%
+e/c : increase/decrease only angular speed by 10%
+
+PRESS &apos;p&apos; TO QUIT THE MODE AND RETURN IN &apos;IDLE&apos; STATUS
+
+&quot;&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="101" column="1" bodyfile="scripts/assist.py" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceassist_1acffbc8fb7d26561b63960306c6d248f4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool assist.can_go_left</definition>
+        <argsstring></argsstring>
+        <name>can_go_left</name>
+        <initializer>=  True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="117" column="1" bodyfile="scripts/assist.py" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceassist_1a5691c87da7502f284db65d019e26e805" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool assist.can_go_right</definition>
+        <argsstring></argsstring>
+        <name>can_go_right</name>
+        <initializer>=  True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="118" column="1" bodyfile="scripts/assist.py" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceassist_1a3c189a1654252f7183929cdd6260fd39" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool assist.can_go_straight</definition>
+        <argsstring></argsstring>
+        <name>can_go_straight</name>
+        <initializer>=  True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="119" column="1" bodyfile="scripts/assist.py" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceassist_1a8c5c72baeb21f48166f1661de7401547" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool assist.firstTime</definition>
+        <argsstring></argsstring>
+        <name>firstTime</name>
+        <initializer>= False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="120" column="1" bodyfile="scripts/assist.py" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceassist_1aa2f4a9a5cde95ef684fd20461a360a77" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int assist.currentmode</definition>
+        <argsstring></argsstring>
+        <name>currentmode</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="121" column="1" bodyfile="scripts/assist.py" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceassist_1ab952858fc20b4f670557838773c39c71" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool assist.quit</definition>
+        <argsstring></argsstring>
+        <name>quit</name>
+        <initializer>= False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="122" column="1" bodyfile="scripts/assist.py" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceassist_1a49662e0bc9fa59ee173a79178390a5d8" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary assist.moveBindings_mode3</definition>
+        <argsstring></argsstring>
+        <name>moveBindings_mode3</name>
+        <initializer>=  {
+        &apos;i&apos;:(1,0,0,0),
+        &apos;j&apos;:(0,0,0,1),
+        &apos;l&apos;:(0,0,0,-1),
+        &apos;k&apos;:(-1,0,0,0),
+        &apos;p&apos;:(0,0,0,0),
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="124" column="1" bodyfile="scripts/assist.py" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceassist_1af314ac6858d2ea9b6647239952de1625" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def assist.getKey</definition>
+        <argsstring>(key_timeout)</argsstring>
+        <name>getKey</name>
+        <param>
+          <type>key_timeout</type>
+          <defname>key_timeout</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="244" column="1" bodyfile="scripts/assist.py" bodystart="244" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceassist_1a5372a1eefbb45d1923d38a99b5296af7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def assist.vels</definition>
+        <argsstring>(speed, turn)</argsstring>
+        <name>vels</name>
+        <param>
+          <type>speed</type>
+          <defname>speed</defname>
+        </param>
+        <param>
+          <type>turn</type>
+          <defname>turn</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Function that prints out the current linear and angular speed
+
+Args:
+    speed(double): current speed
+    turn(double): current angular speed
+Returns:
+    (str):string whinch contains the linear and angular speed</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="255" column="1" bodyfile="scripts/assist.py" bodystart="255" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceassist_1aa7d2eb797980f801f0e69a6d95b9446f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def assist.clbk_laser</definition>
+        <argsstring>(msg)</argsstring>
+        <name>clbk_laser</name>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Callback function which is called to retrieve infos about the distances of the obstacles
+
+Args:
+    msg(sensor_msgs/LaserScan.msg): contains ranges[] array which provides the distances each laser and the objects in the environment</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="270" column="1" bodyfile="scripts/assist.py" bodystart="270" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceassist_1a6918145ae1b8208fb0949641f8dd2209" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def assist.routine</definition>
+        <argsstring>(dictionary, msg, assisted)</argsstring>
+        <name>routine</name>
+        <param>
+          <type>dictionary</type>
+          <defname>dictionary</defname>
+        </param>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <param>
+          <type>assisted</type>
+          <defname>assisted</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Function that binds the pressed key to the actual motion of the robot.
+
+Args:
+    dictionary(dict): a dictionary that contains all the selectable keys
+    msg(str): string containing the instructions for the selected modality</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="306" column="1" bodyfile="scripts/assist.py" bodystart="306" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceassist_1a4f7de9db5aa4586fbb89269e98471b16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def assist.mode_callback</definition>
+        <argsstring>(data)</argsstring>
+        <name>mode_callback</name>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Callback function to set the local variable of the current mode if it has been changed by a node
+
+Args:
+    data(int): integer representing the current modality
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="397" column="1" bodyfile="scripts/assist.py" bodystart="397" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceassist_1acf8036b845a898e970fa8c4bba9eef24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def assist.main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Main function: creates the *PublishThread* object and manages the modality that needs to be runned accordingly to the choice of the user.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/assist.py" line="410" column="1" bodyfile="scripts/assist.py" bodystart="410" bodyend="476"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>.. module::teleop
+    :platform: Unix
+    :synopsis: Python module for the autonomous driving
+.. moduleauthor:: Alessandro Perri &lt;s4476726@studenti.unige.it&gt;
+
+Subscribes to:
+    /mode to retrieve the current modality
+    /scan to obtain infos such as the distances from the obstacles detected by the lasers
+
+Publishes to:
+    /mode to change the modality if the user wants to quit
+
+The third script implements both the *Assisted* and *Not Assisted Driving*.
+The script is essentially a revisitation of *teleop_twist_keyboard* because this one already lets the robot move using keyboard inputs, so the main part on which I worked was related to the Assisted Driving modality.
+In a nutshell, this last mode makes a subscription to _/scan_ topic in order to check if a certain direction is free or if there is an obstacle (e.g. a wall). 
+Note that the robot can &apos;see&apos; through its lasers only within a  +-90 relative degrees range, so it won&apos;t be able to avoid an obstacle if it is moving backward.
+The user can __quit__ both the modalities by pressing `p` from the __teleop console__, or alternatively by pressing another command from __UI console__.</verbatim> </para>
+    </detaileddescription>
+    <location file="scripts/assist.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

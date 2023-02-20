@@ -1,0 +1,336 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacemode__2" kind="namespace" language="Python">
+    <compoundname>mode_2</compoundname>
+    <innerclass refid="classmode__2_1_1colors" prot="public">mode_2::colors</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacemode__2_1a647ffc1eaa7eee4489c79841f9c5f227" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string mode_2.msg1</definition>
+        <argsstring></argsstring>
+        <name>msg1</name>
+        <initializer>=  &quot;Goal Reaching Modality!&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="53" column="1" bodyfile="scripts/mode_2.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemode__2_1aeb5c0b024b9a96812b903a021c64bef5" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string mode_2.msg2</definition>
+        <argsstring></argsstring>
+        <name>msg2</name>
+        <initializer>=  &quot;(Press &apos;1&apos; from &apos;user_interface&apos; console to start this modality)&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="54" column="1" bodyfile="scripts/mode_2.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemode__2_1aca1ab58ed53faf6aef4c4309f76017ca" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mode_2.currentmode</definition>
+        <argsstring></argsstring>
+        <name>currentmode</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="57" column="1" bodyfile="scripts/mode_2.py" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemode__2_1a5e3e0001b5515e43af0b90a49c771a94" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mode_2.done_cb</definition>
+        <argsstring></argsstring>
+        <name>done_cb</name>
+        <initializer>= False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="58" column="1" bodyfile="scripts/mode_2.py" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemode__2_1a23b50130eac4433b40ba8fec110cf648" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mode_2.goal_set</definition>
+        <argsstring></argsstring>
+        <name>goal_set</name>
+        <initializer>= False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="59" column="1" bodyfile="scripts/mode_2.py" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemode__2_1a513331a9bc25610fe23e063a15d0191d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mode_2.isTimeout</definition>
+        <argsstring></argsstring>
+        <name>isTimeout</name>
+        <initializer>= False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="60" column="1" bodyfile="scripts/mode_2.py" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemode__2_1a53992be4fd1e8fecfa1f8eb6094cb9b3" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float mode_2.x_des</definition>
+        <argsstring></argsstring>
+        <name>x_des</name>
+        <initializer>=  0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="61" column="1" bodyfile="scripts/mode_2.py" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemode__2_1ac8278ff0374fa7d876af7ceddaa9ec36" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float mode_2.y_des</definition>
+        <argsstring></argsstring>
+        <name>y_des</name>
+        <initializer>=  0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="62" column="1" bodyfile="scripts/mode_2.py" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemode__2_1ad4107b0a1bf67d519d8c919473845418" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mode_2.pos_received</definition>
+        <argsstring></argsstring>
+        <name>pos_received</name>
+        <initializer>= False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="63" column="1" bodyfile="scripts/mode_2.py" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacemode__2_1adfc3f43e6f214eadf8302f98c514d787" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mode_2.goalpos_callback</definition>
+        <argsstring>(v)</argsstring>
+        <name>goalpos_callback</name>
+        <param>
+          <type>v</type>
+          <defname>v</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Callback function which is called when the goal position has been set</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="65" column="1" bodyfile="scripts/mode_2.py" bodystart="65" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemode__2_1a9b96fc998324cc948232ee49898b3001" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mode_2.callback_active</definition>
+        <argsstring>()</argsstring>
+        <name>callback_active</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Callback function which is called when the action starts</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="75" column="1" bodyfile="scripts/mode_2.py" bodystart="75" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemode__2_1a84b3755fab141d2a025189f8ad3f5614" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mode_2.callback_done</definition>
+        <argsstring>(state, result)</argsstring>
+        <name>callback_done</name>
+        <param>
+          <type>state</type>
+          <defname>state</defname>
+        </param>
+        <param>
+          <type>result</type>
+          <defname>result</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Callback function which is called when the action is over
+
+Args:
+    state(actionlib_msgs/GoalStatus): status of the goal, the message is of type &apos;actionlib_msgs/GoalStatus.msg&apos;
+    result(MoveBaseResult):result of the goal </verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="82" column="1" bodyfile="scripts/mode_2.py" bodystart="82" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemode__2_1a87a71bd931b6540b9a8f7fa8188ed2b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mode_2.callback_feedback</definition>
+        <argsstring>(feedback)</argsstring>
+        <name>callback_feedback</name>
+        <param>
+          <type>feedback</type>
+          <defname>feedback</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Callback function which is called during the execution of the action
+
+Args:
+    feedback(move_base_msgs/MoveBaseActionFeedback.msg): contains infos about the Pose with reference coordinate and timestamp</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="122" column="1" bodyfile="scripts/mode_2.py" bodystart="122" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemode__2_1a1af17dc0aecac6430202f39a12b7964b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mode_2.set_action</definition>
+        <argsstring>()</argsstring>
+        <name>set_action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set-up of the action on the client-side</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="132" column="1" bodyfile="scripts/mode_2.py" bodystart="132" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemode__2_1aaa97cb8cefc50d589c21a8e1d4d46f50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mode_2.set_goal</definition>
+        <argsstring>(goal_x_coord, goal_y_coord)</argsstring>
+        <name>set_goal</name>
+        <param>
+          <type>goal_x_coord</type>
+          <defname>goal_x_coord</defname>
+        </param>
+        <param>
+          <type>goal_y_coord</type>
+          <defname>goal_y_coord</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Function to set the goal
+
+Args:
+    goal_x_coord(double): &apos;x&apos; coordinate of the goal that has to be achieved
+    goal_y_coord(double): &apos;y&apos; coordinate of the goal that has to be achieved</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="148" column="1" bodyfile="scripts/mode_2.py" bodystart="148" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemode__2_1af001ec82bef079c8b790a13a66e94b71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mode_2.my_clbk_timeout</definition>
+        <argsstring>(event)</argsstring>
+        <name>my_clbk_timeout</name>
+        <param>
+          <type>event</type>
+          <defname>event</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Function to cancel the goal if its time has expired
+
+Args:
+    event(TimerObject): object which includes many infos such as the moment when the callback is called and the duration
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="167" column="1" bodyfile="scripts/mode_2.py" bodystart="167" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemode__2_1a706f8fa17c859073df14a5edbb36c03a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mode_2.mode_callback</definition>
+        <argsstring>(data)</argsstring>
+        <name>mode_callback</name>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Callback function to set the local variable of the current mode if it has been changed by a node
+
+Args:
+    data(int): integer representing the current modality
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="180" column="1" bodyfile="scripts/mode_2.py" bodystart="180" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemode__2_1aeed44e44b6fa4b37a096dfaa355b1875" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mode_2.main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Main function: if this modality is choosen by the user, it asks the user to insert a given position and therefore sets the action and the goal.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="193" column="1" bodyfile="scripts/mode_2.py" bodystart="193" bodyend="246"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>.. module::goal_reaching
+    :platform: Unix
+    :synopsis: Python module for the autonomous driving
+.. moduleauthor:: Ammar Iqbal
+
+Subscribes to:
+    /mode to retrieve the current modality
+
+Publishes to:
+    /timeout 
+    /mode to change the modality if the user wants to quit
+
+This node implements the first modality i.e. the autonomous navigation towards a certain position.
+This script, as the name may suggest, implements the &apos;Autonomous Driving modality&apos;. The user will be asked to insert the &apos;x&apos; and &apos;y&apos; coordinates to which the robot will navigate. 
+The whole task is accomplished by a *ROS action*. A 60 seconds timeout is set, so if the request cannot be accomplished the goal will be cancelled. 
+The user can also cancel the goal before the time is over, it is sufficient to return to the &apos;idle&apos; status by pressing &apos;0&apos; on the UI console.</verbatim> </para>
+    </detaileddescription>
+    <location file="scripts/mode_2.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

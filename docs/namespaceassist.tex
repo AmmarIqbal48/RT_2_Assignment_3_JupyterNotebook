@@ -1,0 +1,263 @@
+\hypertarget{namespaceassist}{}\doxysection{assist Namespace Reference}
+\label{namespaceassist}\index{assist@{assist}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classassist_1_1colors}{colors}}
+\item 
+class \mbox{\hyperlink{classassist_1_1_publish_thread}{Publish\+Thread}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceassist_af314ac6858d2ea9b6647239952de1625}\label{namespaceassist_af314ac6858d2ea9b6647239952de1625}} 
+def {\bfseries get\+Key} (key\+\_\+timeout)
+\item 
+def \mbox{\hyperlink{namespaceassist_a5372a1eefbb45d1923d38a99b5296af7}{vels}} (speed, turn)
+\item 
+def \mbox{\hyperlink{namespaceassist_aa7d2eb797980f801f0e69a6d95b9446f}{clbk\+\_\+laser}} (msg)
+\item 
+def \mbox{\hyperlink{namespaceassist_a6918145ae1b8208fb0949641f8dd2209}{routine}} (dictionary, msg, assisted)
+\item 
+def \mbox{\hyperlink{namespaceassist_a4f7de9db5aa4586fbb89269e98471b16}{mode\+\_\+callback}} (data)
+\item 
+def \mbox{\hyperlink{namespaceassist_acf8036b845a898e970fa8c4bba9eef24}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries msg1}
+\item 
+dictionary {\bfseries move\+Bindings\+\_\+mode2}
+\item 
+dictionary {\bfseries speed\+Bindings}
+\item 
+string {\bfseries msg2}
+\item 
+\mbox{\Hypertarget{namespaceassist_acffbc8fb7d26561b63960306c6d248f4}\label{namespaceassist_acffbc8fb7d26561b63960306c6d248f4}} 
+bool {\bfseries can\+\_\+go\+\_\+left} = True
+\item 
+\mbox{\Hypertarget{namespaceassist_a5691c87da7502f284db65d019e26e805}\label{namespaceassist_a5691c87da7502f284db65d019e26e805}} 
+bool {\bfseries can\+\_\+go\+\_\+right} = True
+\item 
+\mbox{\Hypertarget{namespaceassist_a3c189a1654252f7183929cdd6260fd39}\label{namespaceassist_a3c189a1654252f7183929cdd6260fd39}} 
+bool {\bfseries can\+\_\+go\+\_\+straight} = True
+\item 
+\mbox{\Hypertarget{namespaceassist_a8c5c72baeb21f48166f1661de7401547}\label{namespaceassist_a8c5c72baeb21f48166f1661de7401547}} 
+bool {\bfseries first\+Time} = False
+\item 
+\mbox{\Hypertarget{namespaceassist_aa2f4a9a5cde95ef684fd20461a360a77}\label{namespaceassist_aa2f4a9a5cde95ef684fd20461a360a77}} 
+int {\bfseries currentmode} = 0
+\item 
+\mbox{\Hypertarget{namespaceassist_ab952858fc20b4f670557838773c39c71}\label{namespaceassist_ab952858fc20b4f670557838773c39c71}} 
+bool {\bfseries quit} = False
+\item 
+dictionary {\bfseries move\+Bindings\+\_\+mode3}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}.. module::teleop
+    :platform: Unix
+    :synopsis: Python module for the autonomous driving
+.. moduleauthor:: Alessandro Perri <s4476726@studenti.unige.it>
+
+Subscribes to:
+    /mode to retrieve the current modality
+    /scan to obtain infos such as the distances from the obstacles detected by the lasers
+
+Publishes to:
+    /mode to change the modality if the user wants to quit
+
+The third script implements both the *Assisted* and *Not Assisted Driving*.
+The script is essentially a revisitation of *teleop_twist_keyboard* because this one already lets the robot move using keyboard inputs, so the main part on which I worked was related to the Assisted Driving modality.
+In a nutshell, this last mode makes a subscription to _/scan_ topic in order to check if a certain direction is free or if there is an obstacle (e.g. a wall). 
+Note that the robot can 'see' through its lasers only within a  +-90 relative degrees range, so it won't be able to avoid an obstacle if it is moving backward.
+The user can __quit__ both the modalities by pressing `p` from the __teleop console__, or alternatively by pressing another command from __UI console__.\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceassist_aa7d2eb797980f801f0e69a6d95b9446f}\label{namespaceassist_aa7d2eb797980f801f0e69a6d95b9446f}} 
+\index{assist@{assist}!clbk\_laser@{clbk\_laser}}
+\index{clbk\_laser@{clbk\_laser}!assist@{assist}}
+\doxysubsubsection{\texorpdfstring{clbk\_laser()}{clbk\_laser()}}
+{\footnotesize\ttfamily def assist.\+clbk\+\_\+laser (\begin{DoxyParamCaption}\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Callback function which is called to retrieve infos about the distances of the obstacles
+
+Args:
+    msg(sensor_msgs/LaserScan.msg): contains ranges[] array which provides the distances each laser and the objects in the environment\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceassist_acf8036b845a898e970fa8c4bba9eef24}\label{namespaceassist_acf8036b845a898e970fa8c4bba9eef24}} 
+\index{assist@{assist}!main@{main}}
+\index{main@{main}!assist@{assist}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def assist.\+main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Main function: creates the *PublishThread* object and manages the modality that needs to be runned accordingly to the choice of the user.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceassist_a4f7de9db5aa4586fbb89269e98471b16}\label{namespaceassist_a4f7de9db5aa4586fbb89269e98471b16}} 
+\index{assist@{assist}!mode\_callback@{mode\_callback}}
+\index{mode\_callback@{mode\_callback}!assist@{assist}}
+\doxysubsubsection{\texorpdfstring{mode\_callback()}{mode\_callback()}}
+{\footnotesize\ttfamily def assist.\+mode\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Callback function to set the local variable of the current mode if it has been changed by a node
+
+Args:
+    data(int): integer representing the current modality
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceassist_a6918145ae1b8208fb0949641f8dd2209}\label{namespaceassist_a6918145ae1b8208fb0949641f8dd2209}} 
+\index{assist@{assist}!routine@{routine}}
+\index{routine@{routine}!assist@{assist}}
+\doxysubsubsection{\texorpdfstring{routine()}{routine()}}
+{\footnotesize\ttfamily def assist.\+routine (\begin{DoxyParamCaption}\item[{}]{dictionary,  }\item[{}]{msg,  }\item[{}]{assisted }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function that binds the pressed key to the actual motion of the robot.
+
+Args:
+    dictionary(dict): a dictionary that contains all the selectable keys
+    msg(str): string containing the instructions for the selected modality\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceassist_a5372a1eefbb45d1923d38a99b5296af7}\label{namespaceassist_a5372a1eefbb45d1923d38a99b5296af7}} 
+\index{assist@{assist}!vels@{vels}}
+\index{vels@{vels}!assist@{assist}}
+\doxysubsubsection{\texorpdfstring{vels()}{vels()}}
+{\footnotesize\ttfamily def assist.\+vels (\begin{DoxyParamCaption}\item[{}]{speed,  }\item[{}]{turn }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function that prints out the current linear and angular speed
+
+Args:
+    speed(double): current speed
+    turn(double): current angular speed
+Returns:
+    (str):string whinch contains the linear and angular speed\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceassist_a05a6de33cc4df972b75e2cc694ba96e4}\label{namespaceassist_a05a6de33cc4df972b75e2cc694ba96e4}} 
+\index{assist@{assist}!moveBindings\_mode2@{moveBindings\_mode2}}
+\index{moveBindings\_mode2@{moveBindings\_mode2}!assist@{assist}}
+\doxysubsubsection{\texorpdfstring{moveBindings\_mode2}{moveBindings\_mode2}}
+{\footnotesize\ttfamily dictionary assist.\+move\+Bindings\+\_\+mode2}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \{}
+\DoxyCodeLine{2         \textcolor{stringliteral}{'i'}:(1,0,0,0),}
+\DoxyCodeLine{3         \textcolor{stringliteral}{'o'}:(1,0,0,-\/1),}
+\DoxyCodeLine{4         \textcolor{stringliteral}{'j'}:(0,0,0,1),}
+\DoxyCodeLine{5         \textcolor{stringliteral}{'l'}:(0,0,0,-\/1),}
+\DoxyCodeLine{6         \textcolor{stringliteral}{'u'}:(1,0,0,1),}
+\DoxyCodeLine{7         \textcolor{stringliteral}{','}:(-\/1,0,0,0),}
+\DoxyCodeLine{8         \textcolor{stringliteral}{'.'}:(-\/1,0,0,1),}
+\DoxyCodeLine{9         \textcolor{stringliteral}{'m'}:(-\/1,0,0,-\/1),}
+\DoxyCodeLine{10         \textcolor{stringliteral}{'O'}:(1,-\/1,0,0),}
+\DoxyCodeLine{11         \textcolor{stringliteral}{'I'}:(1,0,0,0),}
+\DoxyCodeLine{12         \textcolor{stringliteral}{'J'}:(0,1,0,0),}
+\DoxyCodeLine{13         \textcolor{stringliteral}{'L'}:(0,-\/1,0,0),}
+\DoxyCodeLine{14         \textcolor{stringliteral}{'U'}:(1,1,0,0),}
+\DoxyCodeLine{15         \textcolor{stringliteral}{'<'}:(-\/1,0,0,0),}
+\DoxyCodeLine{16         \textcolor{stringliteral}{'>'}:(-\/1,-\/1,0,0),}
+\DoxyCodeLine{17         \textcolor{stringliteral}{'M'}:(-\/1,1,0,0),}
+\DoxyCodeLine{18         \textcolor{stringliteral}{'t'}:(0,0,1,0),}
+\DoxyCodeLine{19         \textcolor{stringliteral}{'b'}:(0,0,-\/1,0),}
+\DoxyCodeLine{20         }
+\DoxyCodeLine{21     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceassist_a49662e0bc9fa59ee173a79178390a5d8}\label{namespaceassist_a49662e0bc9fa59ee173a79178390a5d8}} 
+\index{assist@{assist}!moveBindings\_mode3@{moveBindings\_mode3}}
+\index{moveBindings\_mode3@{moveBindings\_mode3}!assist@{assist}}
+\doxysubsubsection{\texorpdfstring{moveBindings\_mode3}{moveBindings\_mode3}}
+{\footnotesize\ttfamily dictionary assist.\+move\+Bindings\+\_\+mode3}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \{}
+\DoxyCodeLine{2         \textcolor{stringliteral}{'i'}:(1,0,0,0),}
+\DoxyCodeLine{3         \textcolor{stringliteral}{'j'}:(0,0,0,1),}
+\DoxyCodeLine{4         \textcolor{stringliteral}{'l'}:(0,0,0,-\/1),}
+\DoxyCodeLine{5         \textcolor{stringliteral}{'k'}:(-\/1,0,0,0),}
+\DoxyCodeLine{6         \textcolor{stringliteral}{'p'}:(0,0,0,0),}
+\DoxyCodeLine{7     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceassist_adda323088ef500c408342f4eeb24fa83}\label{namespaceassist_adda323088ef500c408342f4eeb24fa83}} 
+\index{assist@{assist}!msg1@{msg1}}
+\index{msg1@{msg1}!assist@{assist}}
+\doxysubsubsection{\texorpdfstring{msg1}{msg1}}
+{\footnotesize\ttfamily string assist.\+msg1}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \textcolor{stringliteral}{"""}}
+\DoxyCodeLine{2 \textcolor{stringliteral}{-\/ -\/ -\/  NOT ASSISTED  -\/ -\/ -\/}}
+\DoxyCodeLine{3 \textcolor{stringliteral}{-\/ -\/ -\/ MANUAL DRIVING -\/ -\/ -\/}}
+\DoxyCodeLine{4 \textcolor{stringliteral}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{5 \textcolor{stringliteral}{Moving around:}}
+\DoxyCodeLine{6 \textcolor{stringliteral}{   u    i    o}}
+\DoxyCodeLine{7 \textcolor{stringliteral}{   j    k    l}}
+\DoxyCodeLine{8 \textcolor{stringliteral}{   m    ,    .}}
+\DoxyCodeLine{9 \textcolor{stringliteral}{}}
+\DoxyCodeLine{10 \textcolor{stringliteral}{For Holonomic mode (strafing), hold down the shift key:}}
+\DoxyCodeLine{11 \textcolor{stringliteral}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{12 \textcolor{stringliteral}{   U    I    O}}
+\DoxyCodeLine{13 \textcolor{stringliteral}{   J    K    L}}
+\DoxyCodeLine{14 \textcolor{stringliteral}{   M    <    >}}
+\DoxyCodeLine{15 \textcolor{stringliteral}{}}
+\DoxyCodeLine{16 \textcolor{stringliteral}{t : up (+z)}}
+\DoxyCodeLine{17 \textcolor{stringliteral}{b : down (-\/z)}}
+\DoxyCodeLine{18 \textcolor{stringliteral}{}}
+\DoxyCodeLine{19 \textcolor{stringliteral}{anything else : stop}}
+\DoxyCodeLine{20 \textcolor{stringliteral}{}}
+\DoxyCodeLine{21 \textcolor{stringliteral}{q/z : increase/decrease max speeds by 10\%}}
+\DoxyCodeLine{22 \textcolor{stringliteral}{w/x : increase/decrease only linear speed by 10\%}}
+\DoxyCodeLine{23 \textcolor{stringliteral}{e/c : increase/decrease only angular speed by 10\%}}
+\DoxyCodeLine{24 \textcolor{stringliteral}{}}
+\DoxyCodeLine{25 \textcolor{stringliteral}{PRESS 'p' TO QUIT THE MODE AND RETURN IN 'IDLE' STATUS}}
+\DoxyCodeLine{26 \textcolor{stringliteral}{}}
+\DoxyCodeLine{27 \textcolor{stringliteral}{"""}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceassist_a64d977d3fb39ed0340248a47c73f365b}\label{namespaceassist_a64d977d3fb39ed0340248a47c73f365b}} 
+\index{assist@{assist}!msg2@{msg2}}
+\index{msg2@{msg2}!assist@{assist}}
+\doxysubsubsection{\texorpdfstring{msg2}{msg2}}
+{\footnotesize\ttfamily string assist.\+msg2}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \textcolor{stringliteral}{"""}}
+\DoxyCodeLine{2 \textcolor{stringliteral}{-\/ -\/ -\/ -\/  ASSISTED  -\/ -\/ -\/ -\/}}
+\DoxyCodeLine{3 \textcolor{stringliteral}{-\/ -\/ -\/ MANUAL DRIVING -\/ -\/ -\/}}
+\DoxyCodeLine{4 \textcolor{stringliteral}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{5 \textcolor{stringliteral}{Moving around:}}
+\DoxyCodeLine{6 \textcolor{stringliteral}{       i    }}
+\DoxyCodeLine{7 \textcolor{stringliteral}{   j   k    l}}
+\DoxyCodeLine{8 \textcolor{stringliteral}{}}
+\DoxyCodeLine{9 \textcolor{stringliteral}{q/z : increase/decrease max speeds by 10\%}}
+\DoxyCodeLine{10 \textcolor{stringliteral}{w/x : increase/decrease only linear speed by 10\%}}
+\DoxyCodeLine{11 \textcolor{stringliteral}{e/c : increase/decrease only angular speed by 10\%}}
+\DoxyCodeLine{12 \textcolor{stringliteral}{}}
+\DoxyCodeLine{13 \textcolor{stringliteral}{PRESS 'p' TO QUIT THE MODE AND RETURN IN 'IDLE' STATUS}}
+\DoxyCodeLine{14 \textcolor{stringliteral}{}}
+\DoxyCodeLine{15 \textcolor{stringliteral}{"""}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceassist_a2b46b0bf181c2eb9c85daa80400e2dd1}\label{namespaceassist_a2b46b0bf181c2eb9c85daa80400e2dd1}} 
+\index{assist@{assist}!speedBindings@{speedBindings}}
+\index{speedBindings@{speedBindings}!assist@{assist}}
+\doxysubsubsection{\texorpdfstring{speedBindings}{speedBindings}}
+{\footnotesize\ttfamily dictionary assist.\+speed\+Bindings}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 = \{}
+\DoxyCodeLine{2         \textcolor{stringliteral}{'q'}:(1.1,1.1),}
+\DoxyCodeLine{3         \textcolor{stringliteral}{'z'}:(.9,.9),}
+\DoxyCodeLine{4         \textcolor{stringliteral}{'w'}:(1.1,1),}
+\DoxyCodeLine{5         \textcolor{stringliteral}{'x'}:(.9,1),}
+\DoxyCodeLine{6         \textcolor{stringliteral}{'e'}:(1,1.1),}
+\DoxyCodeLine{7         \textcolor{stringliteral}{'c'}:(1,.9),}
+\DoxyCodeLine{8     \}}
+
+\end{DoxyCode}

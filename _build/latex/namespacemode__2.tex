@@ -1,0 +1,164 @@
+\hypertarget{namespacemode__2}{}\doxysection{mode\+\_\+2 Namespace Reference}
+\label{namespacemode__2}\index{mode\_2@{mode\_2}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmode__2_1_1colors}{colors}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacemode__2_adfc3f43e6f214eadf8302f98c514d787}{goalpos\+\_\+callback}} (v)
+\item 
+def \mbox{\hyperlink{namespacemode__2_a9b96fc998324cc948232ee49898b3001}{callback\+\_\+active}} ()
+\item 
+def \mbox{\hyperlink{namespacemode__2_a84b3755fab141d2a025189f8ad3f5614}{callback\+\_\+done}} (state, result)
+\item 
+def \mbox{\hyperlink{namespacemode__2_a87a71bd931b6540b9a8f7fa8188ed2b6}{callback\+\_\+feedback}} (feedback)
+\item 
+def \mbox{\hyperlink{namespacemode__2_a1af17dc0aecac6430202f39a12b7964b}{set\+\_\+action}} ()
+\item 
+def \mbox{\hyperlink{namespacemode__2_aaa97cb8cefc50d589c21a8e1d4d46f50}{set\+\_\+goal}} (goal\+\_\+x\+\_\+coord, goal\+\_\+y\+\_\+coord)
+\item 
+def \mbox{\hyperlink{namespacemode__2_af001ec82bef079c8b790a13a66e94b71}{my\+\_\+clbk\+\_\+timeout}} (event)
+\item 
+def \mbox{\hyperlink{namespacemode__2_a706f8fa17c859073df14a5edbb36c03a}{mode\+\_\+callback}} (data)
+\item 
+def \mbox{\hyperlink{namespacemode__2_aeed44e44b6fa4b37a096dfaa355b1875}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacemode__2_a647ffc1eaa7eee4489c79841f9c5f227}\label{namespacemode__2_a647ffc1eaa7eee4489c79841f9c5f227}} 
+string {\bfseries msg1} = \char`\"{}Goal Reaching Modality!\char`\"{}
+\item 
+\mbox{\Hypertarget{namespacemode__2_aeb5c0b024b9a96812b903a021c64bef5}\label{namespacemode__2_aeb5c0b024b9a96812b903a021c64bef5}} 
+string {\bfseries msg2} = \char`\"{}(Press \textquotesingle{}1\textquotesingle{} from \textquotesingle{}user\+\_\+interface\textquotesingle{} console to start this modality)\char`\"{}
+\item 
+\mbox{\Hypertarget{namespacemode__2_aca1ab58ed53faf6aef4c4309f76017ca}\label{namespacemode__2_aca1ab58ed53faf6aef4c4309f76017ca}} 
+int {\bfseries currentmode} = 0
+\item 
+\mbox{\Hypertarget{namespacemode__2_a5e3e0001b5515e43af0b90a49c771a94}\label{namespacemode__2_a5e3e0001b5515e43af0b90a49c771a94}} 
+bool {\bfseries done\+\_\+cb} = False
+\item 
+\mbox{\Hypertarget{namespacemode__2_a23b50130eac4433b40ba8fec110cf648}\label{namespacemode__2_a23b50130eac4433b40ba8fec110cf648}} 
+bool {\bfseries goal\+\_\+set} = False
+\item 
+\mbox{\Hypertarget{namespacemode__2_a513331a9bc25610fe23e063a15d0191d}\label{namespacemode__2_a513331a9bc25610fe23e063a15d0191d}} 
+bool {\bfseries is\+Timeout} = False
+\item 
+\mbox{\Hypertarget{namespacemode__2_a53992be4fd1e8fecfa1f8eb6094cb9b3}\label{namespacemode__2_a53992be4fd1e8fecfa1f8eb6094cb9b3}} 
+float {\bfseries x\+\_\+des} = 0.\+0
+\item 
+\mbox{\Hypertarget{namespacemode__2_ac8278ff0374fa7d876af7ceddaa9ec36}\label{namespacemode__2_ac8278ff0374fa7d876af7ceddaa9ec36}} 
+float {\bfseries y\+\_\+des} = 0.\+0
+\item 
+\mbox{\Hypertarget{namespacemode__2_ad4107b0a1bf67d519d8c919473845418}\label{namespacemode__2_ad4107b0a1bf67d519d8c919473845418}} 
+bool {\bfseries pos\+\_\+received} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}.. module::goal_reaching
+    :platform: Unix
+    :synopsis: Python module for the autonomous driving
+.. moduleauthor:: Ammar Iqbal
+
+Subscribes to:
+    /mode to retrieve the current modality
+
+Publishes to:
+    /timeout 
+    /mode to change the modality if the user wants to quit
+
+This node implements the first modality i.e. the autonomous navigation towards a certain position.
+This script, as the name may suggest, implements the 'Autonomous Driving modality'. The user will be asked to insert the 'x' and 'y' coordinates to which the robot will navigate. 
+The whole task is accomplished by a *ROS action*. A 60 seconds timeout is set, so if the request cannot be accomplished the goal will be cancelled. 
+The user can also cancel the goal before the time is over, it is sufficient to return to the 'idle' status by pressing '0' on the UI console.\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacemode__2_a9b96fc998324cc948232ee49898b3001}\label{namespacemode__2_a9b96fc998324cc948232ee49898b3001}} 
+\index{mode\_2@{mode\_2}!callback\_active@{callback\_active}}
+\index{callback\_active@{callback\_active}!mode\_2@{mode\_2}}
+\doxysubsubsection{\texorpdfstring{callback\_active()}{callback\_active()}}
+{\footnotesize\ttfamily def mode\+\_\+2.\+callback\+\_\+active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Callback function which is called when the action starts\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemode__2_a84b3755fab141d2a025189f8ad3f5614}\label{namespacemode__2_a84b3755fab141d2a025189f8ad3f5614}} 
+\index{mode\_2@{mode\_2}!callback\_done@{callback\_done}}
+\index{callback\_done@{callback\_done}!mode\_2@{mode\_2}}
+\doxysubsubsection{\texorpdfstring{callback\_done()}{callback\_done()}}
+{\footnotesize\ttfamily def mode\+\_\+2.\+callback\+\_\+done (\begin{DoxyParamCaption}\item[{}]{state,  }\item[{}]{result }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Callback function which is called when the action is over
+
+Args:
+    state(actionlib_msgs/GoalStatus): status of the goal, the message is of type 'actionlib_msgs/GoalStatus.msg'
+    result(MoveBaseResult):result of the goal \end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemode__2_a87a71bd931b6540b9a8f7fa8188ed2b6}\label{namespacemode__2_a87a71bd931b6540b9a8f7fa8188ed2b6}} 
+\index{mode\_2@{mode\_2}!callback\_feedback@{callback\_feedback}}
+\index{callback\_feedback@{callback\_feedback}!mode\_2@{mode\_2}}
+\doxysubsubsection{\texorpdfstring{callback\_feedback()}{callback\_feedback()}}
+{\footnotesize\ttfamily def mode\+\_\+2.\+callback\+\_\+feedback (\begin{DoxyParamCaption}\item[{}]{feedback }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Callback function which is called during the execution of the action
+
+Args:
+    feedback(move_base_msgs/MoveBaseActionFeedback.msg): contains infos about the Pose with reference coordinate and timestamp\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemode__2_adfc3f43e6f214eadf8302f98c514d787}\label{namespacemode__2_adfc3f43e6f214eadf8302f98c514d787}} 
+\index{mode\_2@{mode\_2}!goalpos\_callback@{goalpos\_callback}}
+\index{goalpos\_callback@{goalpos\_callback}!mode\_2@{mode\_2}}
+\doxysubsubsection{\texorpdfstring{goalpos\_callback()}{goalpos\_callback()}}
+{\footnotesize\ttfamily def mode\+\_\+2.\+goalpos\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{v }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Callback function which is called when the goal position has been set\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemode__2_aeed44e44b6fa4b37a096dfaa355b1875}\label{namespacemode__2_aeed44e44b6fa4b37a096dfaa355b1875}} 
+\index{mode\_2@{mode\_2}!main@{main}}
+\index{main@{main}!mode\_2@{mode\_2}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def mode\+\_\+2.\+main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Main function: if this modality is choosen by the user, it asks the user to insert a given position and therefore sets the action and the goal.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemode__2_a706f8fa17c859073df14a5edbb36c03a}\label{namespacemode__2_a706f8fa17c859073df14a5edbb36c03a}} 
+\index{mode\_2@{mode\_2}!mode\_callback@{mode\_callback}}
+\index{mode\_callback@{mode\_callback}!mode\_2@{mode\_2}}
+\doxysubsubsection{\texorpdfstring{mode\_callback()}{mode\_callback()}}
+{\footnotesize\ttfamily def mode\+\_\+2.\+mode\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Callback function to set the local variable of the current mode if it has been changed by a node
+
+Args:
+    data(int): integer representing the current modality
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemode__2_af001ec82bef079c8b790a13a66e94b71}\label{namespacemode__2_af001ec82bef079c8b790a13a66e94b71}} 
+\index{mode\_2@{mode\_2}!my\_clbk\_timeout@{my\_clbk\_timeout}}
+\index{my\_clbk\_timeout@{my\_clbk\_timeout}!mode\_2@{mode\_2}}
+\doxysubsubsection{\texorpdfstring{my\_clbk\_timeout()}{my\_clbk\_timeout()}}
+{\footnotesize\ttfamily def mode\+\_\+2.\+my\+\_\+clbk\+\_\+timeout (\begin{DoxyParamCaption}\item[{}]{event }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function to cancel the goal if its time has expired
+
+Args:
+    event(TimerObject): object which includes many infos such as the moment when the callback is called and the duration
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemode__2_a1af17dc0aecac6430202f39a12b7964b}\label{namespacemode__2_a1af17dc0aecac6430202f39a12b7964b}} 
+\index{mode\_2@{mode\_2}!set\_action@{set\_action}}
+\index{set\_action@{set\_action}!mode\_2@{mode\_2}}
+\doxysubsubsection{\texorpdfstring{set\_action()}{set\_action()}}
+{\footnotesize\ttfamily def mode\+\_\+2.\+set\+\_\+action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set-up of the action on the client-side\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemode__2_aaa97cb8cefc50d589c21a8e1d4d46f50}\label{namespacemode__2_aaa97cb8cefc50d589c21a8e1d4d46f50}} 
+\index{mode\_2@{mode\_2}!set\_goal@{set\_goal}}
+\index{set\_goal@{set\_goal}!mode\_2@{mode\_2}}
+\doxysubsubsection{\texorpdfstring{set\_goal()}{set\_goal()}}
+{\footnotesize\ttfamily def mode\+\_\+2.\+set\+\_\+goal (\begin{DoxyParamCaption}\item[{}]{goal\+\_\+x\+\_\+coord,  }\item[{}]{goal\+\_\+y\+\_\+coord }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function to set the goal
+
+Args:
+    goal_x_coord(double): 'x' coordinate of the goal that has to be achieved
+    goal_y_coord(double): 'y' coordinate of the goal that has to be achieved\end{DoxyVerb}
+ 

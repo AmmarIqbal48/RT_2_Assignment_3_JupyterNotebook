@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classmode__2_1_1_publish_thread" kind="class" language="Python" prot="public">
+    <compoundname>mode_2::PublishThread</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Thread</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmode__2_1_1_publish_thread_1a83200b4ae032799790aa2860843c8110" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mode_2.PublishThread::publisher</definition>
+        <argsstring></argsstring>
+        <name>publisher</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="90" column="1" bodyfile="scripts/mode_2.py" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmode__2_1_1_publish_thread_1a3a2909fbb21551335a639f1895a024b2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mode_2.PublishThread::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="91" column="1" bodyfile="scripts/mode_2.py" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmode__2_1_1_publish_thread_1af2ca14ec5d7dca5f6b7006e6ac775491" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mode_2.PublishThread::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="92" column="1" bodyfile="scripts/mode_2.py" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmode__2_1_1_publish_thread_1a2ccf41fcb123d47445142d3225279690" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mode_2.PublishThread::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="93" column="1" bodyfile="scripts/mode_2.py" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmode__2_1_1_publish_thread_1acef53a719f25d407f852a4531dd6d9d8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mode_2.PublishThread::th</definition>
+        <argsstring></argsstring>
+        <name>th</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="94" column="1" bodyfile="scripts/mode_2.py" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmode__2_1_1_publish_thread_1a96a2fe28ffd2b3bae7e8c9984b7c1322" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mode_2.PublishThread::speed</definition>
+        <argsstring></argsstring>
+        <name>speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="95" column="1" bodyfile="scripts/mode_2.py" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmode__2_1_1_publish_thread_1ac4005d00eea6d4c022db57bc2418872c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mode_2.PublishThread::turn</definition>
+        <argsstring></argsstring>
+        <name>turn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="96" column="1" bodyfile="scripts/mode_2.py" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmode__2_1_1_publish_thread_1aea8fb487531f67d51380da281d4cb64e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mode_2.PublishThread::condition</definition>
+        <argsstring></argsstring>
+        <name>condition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="97" column="1" bodyfile="scripts/mode_2.py" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmode__2_1_1_publish_thread_1aac213c9b1f34e67f04cb4d341d1d3ad1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mode_2.PublishThread::done</definition>
+        <argsstring></argsstring>
+        <name>done</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="98" column="1" bodyfile="scripts/mode_2.py" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmode__2_1_1_publish_thread_1a6cf8fd04ff2472000cc94bc8d100754b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mode_2.PublishThread::timeout</definition>
+        <argsstring></argsstring>
+        <name>timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="103" column="1" bodyfile="scripts/mode_2.py" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmode__2_1_1_publish_thread_1a5ac6d2ce43e9a82e704021edf17e1d1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mode_2.PublishThread.__init__</definition>
+        <argsstring>(self, rate)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>rate</type>
+          <defname>rate</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="88" column="1" bodyfile="scripts/mode_2.py" bodystart="88" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classmode__2_1_1_publish_thread_1ade20942009599b29717cd147b7bea9f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mode_2.PublishThread.wait_for_subscribers</definition>
+        <argsstring>(self)</argsstring>
+        <name>wait_for_subscribers</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="109" column="1" bodyfile="scripts/mode_2.py" bodystart="109" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classmode__2_1_1_publish_thread_1ab88e93d33ce88a6ade6d1199bd335db0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mode_2.PublishThread.update</definition>
+        <argsstring>(self, x, y, z, th, speed, turn)</argsstring>
+        <name>update</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+        </param>
+        <param>
+          <type>z</type>
+          <defname>z</defname>
+        </param>
+        <param>
+          <type>th</type>
+          <defname>th</defname>
+        </param>
+        <param>
+          <type>speed</type>
+          <defname>speed</defname>
+        </param>
+        <param>
+          <type>turn</type>
+          <defname>turn</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="120" column="1" bodyfile="scripts/mode_2.py" bodystart="120" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classmode__2_1_1_publish_thread_1ad294535fee0786681310fdd2bac351df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mode_2.PublishThread.stop</definition>
+        <argsstring>(self)</argsstring>
+        <name>stop</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="132" column="1" bodyfile="scripts/mode_2.py" bodystart="132" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classmode__2_1_1_publish_thread_1ae7fce321e7a9f3f296f7852354c17400" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mode_2.PublishThread.run</definition>
+        <argsstring>(self)</argsstring>
+        <name>run</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/mode_2.py" line="137" column="1" bodyfile="scripts/mode_2.py" bodystart="137" bodyend="175"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>threading::Thread</label>
+      </node>
+      <node id="1">
+        <label>mode_2.PublishThread</label>
+        <link refid="classmode__2_1_1_publish_thread"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>threading::Thread</label>
+      </node>
+      <node id="1">
+        <label>mode_2.PublishThread</label>
+        <link refid="classmode__2_1_1_publish_thread"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="scripts/mode_2.py" line="87" column="1" bodyfile="scripts/mode_2.py" bodystart="87" bodyend="176"/>
+    <listofallmembers>
+      <member refid="classmode__2_1_1_publish_thread_1a5ac6d2ce43e9a82e704021edf17e1d1c" prot="public" virt="non-virtual"><scope>mode_2::PublishThread</scope><name>__init__</name></member>
+      <member refid="classmode__2_1_1_publish_thread_1aea8fb487531f67d51380da281d4cb64e" prot="public" virt="non-virtual"><scope>mode_2::PublishThread</scope><name>condition</name></member>
+      <member refid="classmode__2_1_1_publish_thread_1aac213c9b1f34e67f04cb4d341d1d3ad1" prot="public" virt="non-virtual"><scope>mode_2::PublishThread</scope><name>done</name></member>
+      <member refid="classmode__2_1_1_publish_thread_1a83200b4ae032799790aa2860843c8110" prot="public" virt="non-virtual"><scope>mode_2::PublishThread</scope><name>publisher</name></member>
+      <member refid="classmode__2_1_1_publish_thread_1ae7fce321e7a9f3f296f7852354c17400" prot="public" virt="non-virtual"><scope>mode_2::PublishThread</scope><name>run</name></member>
+      <member refid="classmode__2_1_1_publish_thread_1a96a2fe28ffd2b3bae7e8c9984b7c1322" prot="public" virt="non-virtual"><scope>mode_2::PublishThread</scope><name>speed</name></member>
+      <member refid="classmode__2_1_1_publish_thread_1ad294535fee0786681310fdd2bac351df" prot="public" virt="non-virtual"><scope>mode_2::PublishThread</scope><name>stop</name></member>
+      <member refid="classmode__2_1_1_publish_thread_1acef53a719f25d407f852a4531dd6d9d8" prot="public" virt="non-virtual"><scope>mode_2::PublishThread</scope><name>th</name></member>
+      <member refid="classmode__2_1_1_publish_thread_1a6cf8fd04ff2472000cc94bc8d100754b" prot="public" virt="non-virtual"><scope>mode_2::PublishThread</scope><name>timeout</name></member>
+      <member refid="classmode__2_1_1_publish_thread_1ac4005d00eea6d4c022db57bc2418872c" prot="public" virt="non-virtual"><scope>mode_2::PublishThread</scope><name>turn</name></member>
+      <member refid="classmode__2_1_1_publish_thread_1ab88e93d33ce88a6ade6d1199bd335db0" prot="public" virt="non-virtual"><scope>mode_2::PublishThread</scope><name>update</name></member>
+      <member refid="classmode__2_1_1_publish_thread_1ade20942009599b29717cd147b7bea9f9" prot="public" virt="non-virtual"><scope>mode_2::PublishThread</scope><name>wait_for_subscribers</name></member>
+      <member refid="classmode__2_1_1_publish_thread_1a3a2909fbb21551335a639f1895a024b2" prot="public" virt="non-virtual"><scope>mode_2::PublishThread</scope><name>x</name></member>
+      <member refid="classmode__2_1_1_publish_thread_1af2ca14ec5d7dca5f6b7006e6ac775491" prot="public" virt="non-virtual"><scope>mode_2::PublishThread</scope><name>y</name></member>
+      <member refid="classmode__2_1_1_publish_thread_1a2ccf41fcb123d47445142d3225279690" prot="public" virt="non-virtual"><scope>mode_2::PublishThread</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

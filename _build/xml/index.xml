@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
+  <compound refid="classassist__mode_1_1colors" kind="class"><name>assist_mode::colors</name>
+    <member refid="classassist__mode_1_1colors_1aeaa30c816baf909f180f1e52d938ad3e" kind="variable"><name>PINK</name></member>
+    <member refid="classassist__mode_1_1colors_1a10df5a46b7bf99c2967eae16940ca8f4" kind="variable"><name>BLUE</name></member>
+    <member refid="classassist__mode_1_1colors_1af54b5ee591e8a61c4c1114a1a8f2120e" kind="variable"><name>CYAN</name></member>
+    <member refid="classassist__mode_1_1colors_1a6f29959cb1c1fbdf16a55c55c727eb6a" kind="variable"><name>GREEN</name></member>
+    <member refid="classassist__mode_1_1colors_1adf6c1467b746c504bcb073df5379b1b6" kind="variable"><name>YELLOW</name></member>
+    <member refid="classassist__mode_1_1colors_1ab1429c6cd9ea563aa151067d9e2ef8fd" kind="variable"><name>RED</name></member>
+    <member refid="classassist__mode_1_1colors_1ab9232252a2f0558cf241ce6186eb17da" kind="variable"><name>ORANGE</name></member>
+    <member refid="classassist__mode_1_1colors_1a061738207820666d687c7ce97fd2e745" kind="variable"><name>PURPLE</name></member>
+    <member refid="classassist__mode_1_1colors_1a5d086ee5a0f4dd0e3b6d70b3501e99ed" kind="variable"><name>ENDC</name></member>
+    <member refid="classassist__mode_1_1colors_1a219971a2d2ecdd9d6b35362efdeee1d7" kind="variable"><name>BOLD</name></member>
+    <member refid="classassist__mode_1_1colors_1aff3e8738ceeb51777de57851e175f40c" kind="variable"><name>UNDERLINE</name></member>
+  </compound>
+  <compound refid="classuser__interface_1_1colors" kind="class"><name>user_interface::colors</name>
+    <member refid="classuser__interface_1_1colors_1adff21e62dc615c872589d4d990054280" kind="variable"><name>PINK</name></member>
+    <member refid="classuser__interface_1_1colors_1af1b7b5c96a2613d0393b0c1b9c2a320a" kind="variable"><name>BLUE</name></member>
+    <member refid="classuser__interface_1_1colors_1ad2498ff8fb5602c765d4b64f73181475" kind="variable"><name>CYAN</name></member>
+    <member refid="classuser__interface_1_1colors_1a2e1d637d0f35c8604632c874a2ef24b0" kind="variable"><name>GREEN</name></member>
+    <member refid="classuser__interface_1_1colors_1ab8de7b45c8340ae12a8c2c5eb36908d8" kind="variable"><name>YELLOW</name></member>
+    <member refid="classuser__interface_1_1colors_1a77b6bdcd8e57f48f7fd63f2b576c51dd" kind="variable"><name>RED</name></member>
+    <member refid="classuser__interface_1_1colors_1a3d520d3b6b48b8e1479113c48a0b1778" kind="variable"><name>ORANGE</name></member>
+    <member refid="classuser__interface_1_1colors_1aa701688834ce22cad81b135c69ed8e4d" kind="variable"><name>PURPLE</name></member>
+    <member refid="classuser__interface_1_1colors_1a5ed36a25e728db6538db2ba7dd3f4841" kind="variable"><name>ENDC</name></member>
+    <member refid="classuser__interface_1_1colors_1a51184513ddb1428cb146fb5f12160a39" kind="variable"><name>BOLD</name></member>
+    <member refid="classuser__interface_1_1colors_1ad97e5f2ff2c55b0bccb13e26d3c402f6" kind="variable"><name>UNDERLINE</name></member>
+  </compound>
+  <compound refid="classmode__2_1_1colors" kind="class"><name>mode_2::colors</name>
+    <member refid="classmode__2_1_1colors_1ade7d929e6cf08b42b01371d3f08930f5" kind="variable"><name>PINK</name></member>
+    <member refid="classmode__2_1_1colors_1a91dcc9ace1c717dc5d655fe4420d4b6e" kind="variable"><name>BLUE</name></member>
+    <member refid="classmode__2_1_1colors_1a721cfdbe6437025c109e7279599d45bf" kind="variable"><name>CYAN</name></member>
+    <member refid="classmode__2_1_1colors_1a254f52362e84cf83c6558104f34f02a8" kind="variable"><name>GREEN</name></member>
+    <member refid="classmode__2_1_1colors_1a0523b3dfa556ea5865bb0bf417030015" kind="variable"><name>YELLOW</name></member>
+    <member refid="classmode__2_1_1colors_1a633c7f4fb8d6f1f306c7cb719c6739bc" kind="variable"><name>RED</name></member>
+    <member refid="classmode__2_1_1colors_1ac265ab7b7ef558830c89927612dce2f9" kind="variable"><name>ORANGE</name></member>
+    <member refid="classmode__2_1_1colors_1a13ed0cf3455de22fad260fdfaa16fea1" kind="variable"><name>PURPLE</name></member>
+    <member refid="classmode__2_1_1colors_1a75c12a8e7da949b3a26c973c6b8fe871" kind="variable"><name>ENDC</name></member>
+    <member refid="classmode__2_1_1colors_1ac2a719275cb737decc717b027e0e7ec1" kind="variable"><name>BOLD</name></member>
+    <member refid="classmode__2_1_1colors_1a60d924280d5e4d6130b53ae37191653b" kind="variable"><name>UNDERLINE</name></member>
+  </compound>
+  <compound refid="classassist__mode_1_1_publish_thread" kind="class"><name>assist_mode::PublishThread</name>
+    <member refid="classassist__mode_1_1_publish_thread_1a205bb93e7a8f5474b0b1bd2068b25eb0" kind="variable"><name>publisher</name></member>
+    <member refid="classassist__mode_1_1_publish_thread_1a514dda0393e02591c9ab61d5fe4ebf96" kind="variable"><name>x</name></member>
+    <member refid="classassist__mode_1_1_publish_thread_1a1f3344f353d34f014eeca0d1bc8b8631" kind="variable"><name>y</name></member>
+    <member refid="classassist__mode_1_1_publish_thread_1a00fb47d7c9c82e4353e57519283e38d3" kind="variable"><name>z</name></member>
+    <member refid="classassist__mode_1_1_publish_thread_1aee50487ed4007282a68c8971c19d4992" kind="variable"><name>th</name></member>
+    <member refid="classassist__mode_1_1_publish_thread_1a62aa8934c053a8600b423aef60677c99" kind="variable"><name>speed</name></member>
+    <member refid="classassist__mode_1_1_publish_thread_1a5e5630780d23629f9026d7085830681e" kind="variable"><name>turn</name></member>
+    <member refid="classassist__mode_1_1_publish_thread_1aa461a90d99eaabddbe4590918684ab94" kind="variable"><name>condition</name></member>
+    <member refid="classassist__mode_1_1_publish_thread_1a71377da25897b0db84396c714616313f" kind="variable"><name>done</name></member>
+    <member refid="classassist__mode_1_1_publish_thread_1ac5b304658bce83c4ac1b3e008eda390c" kind="variable"><name>timeout</name></member>
+    <member refid="classassist__mode_1_1_publish_thread_1a27d74da0c13dc8ed7378f2b958840a55" kind="function"><name>__init__</name></member>
+    <member refid="classassist__mode_1_1_publish_thread_1a5c173223de28096314c5ad81de80062d" kind="function"><name>wait_for_subscribers</name></member>
+    <member refid="classassist__mode_1_1_publish_thread_1a629df81921b009b16672fcd405db7fcd" kind="function"><name>update</name></member>
+    <member refid="classassist__mode_1_1_publish_thread_1a2c5defb426e303c6e3741880b9e1b725" kind="function"><name>stop</name></member>
+    <member refid="classassist__mode_1_1_publish_thread_1a56fcef008d989bbabc83c4078b69a959" kind="function"><name>my_stop</name></member>
+    <member refid="classassist__mode_1_1_publish_thread_1a8cfe9752969ef05ac708949a9c4e8f12" kind="function"><name>run</name></member>
+  </compound>
+  <compound refid="namespaceassist__mode" kind="namespace"><name>assist_mode</name>
+    <member refid="namespaceassist__mode_1a9169a33e121b1d9472d7b516de283d1e" kind="variable"><name>msg1</name></member>
+    <member refid="namespaceassist__mode_1af53f5c6a6cdc6d8f6053f3392f609138" kind="variable"><name>moveBindings_mode2</name></member>
+    <member refid="namespaceassist__mode_1aaf4066b59eb74572239a5f90c09296e3" kind="variable"><name>speedBindings</name></member>
+    <member refid="namespaceassist__mode_1addc54c9549bc95420557c407a1372a0f" kind="variable"><name>msg2</name></member>
+    <member refid="namespaceassist__mode_1a2f88b47c1d8cba54801b682460fb97ac" kind="variable"><name>can_go_left</name></member>
+    <member refid="namespaceassist__mode_1aaf920423e1a5bc59cdcaec960d012560" kind="variable"><name>can_go_right</name></member>
+    <member refid="namespaceassist__mode_1ad3d75a97919448d06314008a8b220a3e" kind="variable"><name>can_go_straight</name></member>
+    <member refid="namespaceassist__mode_1a1c424392714212b4a270510796198e8f" kind="variable"><name>firstTime</name></member>
+    <member refid="namespaceassist__mode_1a9c057b6d45d5d7079a0fd406414d49bd" kind="variable"><name>currentmode</name></member>
+    <member refid="namespaceassist__mode_1a74ffe47e6bd065db5fab17a4347177ba" kind="variable"><name>quit</name></member>
+    <member refid="namespaceassist__mode_1a88878b516861ad86b48228b4f46cf3b8" kind="variable"><name>moveBindings_mode3</name></member>
+    <member refid="namespaceassist__mode_1a9419aa6614656ba5922fcb4aa79b4cec" kind="function"><name>getKey</name></member>
+    <member refid="namespaceassist__mode_1a1c33497f6de0afe96b88c9d22e003bad" kind="function"><name>vels</name></member>
+    <member refid="namespaceassist__mode_1af4370c2da8807de64c1dc7f2d9f8576b" kind="function"><name>clbk_laser</name></member>
+    <member refid="namespaceassist__mode_1a0dca9974ea50c0d2efc2871b69518b23" kind="function"><name>routine</name></member>
+    <member refid="namespaceassist__mode_1a43efb27e5afa2e21c22bac1d2bee2b9e" kind="function"><name>mode_callback</name></member>
+    <member refid="namespaceassist__mode_1a58aab99ff89ef93759e2d09ba5e7da57" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="namespaceconf" kind="namespace"><name>conf</name>
+    <member refid="conf_8py_1a45653c983098153b78e33600e39230eb" kind="variable"><name>project</name></member>
+    <member refid="conf_8py_1a33fa97cf51dcb25970fbf53f10159589" kind="variable"><name>copyright</name></member>
+    <member refid="conf_8py_1a637c239d256432248aa8d9f3ab0b8c52" kind="variable"><name>author</name></member>
+    <member refid="conf_8py_1a325dc746d8bf05c54d26351c35a21d90" kind="variable"><name>release</name></member>
+    <member refid="conf_8py_1a332f430461432dc465213f884a1e4967" kind="variable"><name>shell</name></member>
+    <member refid="conf_8py_1a540efa67c53e84c1c353c1df2e37e39c" kind="variable"><name>extensions</name></member>
+    <member refid="conf_8py_1ae850ae634911b713e036b43894fdd525" kind="variable"><name>templates_path</name></member>
+    <member refid="conf_8py_1a7ad48fb6f3e9b129c02346ea0d3527c1" kind="variable"><name>exclude_patterns</name></member>
+    <member refid="conf_8py_1a3117edf4443d9b8c70a9f0f44294ba79" kind="variable"><name>highlight_language</name></member>
+    <member refid="conf_8py_1a10af2a769eb3bd3322e874f677e435b1" kind="variable"><name>source_suffix</name></member>
+    <member refid="conf_8py_1a6fcd7e5236f355b1e1a55f9d95988810" kind="variable"><name>master_doc</name></member>
+    <member refid="conf_8py_1a6c3bfcc1a44546c1c75ce20f55bd0fd6" kind="variable"><name>html_theme</name></member>
+    <member refid="conf_8py_1af4fb5d8851ccaade135c2668dd3ced41" kind="variable"><name>html_static_path</name></member>
+    <member refid="conf_8py_1a8375f4f963de3ac8026eaa9beced9564" kind="variable"><name>intersphinx_mapping</name></member>
+    <member refid="conf_8py_1a8fe7f0d85f975f4ecba5cb6066959a09" kind="variable"><name>todo_include_todos</name></member>
+    <member refid="conf_8py_1acb47d2c0c2904fa7d36b63142533f383" kind="variable"><name>breathe_projects</name></member>
+    <member refid="conf_8py_1a6eba2d2c7ae923054b1c49e686ec89b9" kind="variable"><name>breathe_default_project</name></member>
+    <member refid="conf_8py_1a54585428ce84441199d9dfd7087e2243" kind="variable"><name>breathe_default_members</name></member>
+  </compound>
+  <compound refid="namespacemode__2" kind="namespace"><name>mode_2</name>
+    <member refid="namespacemode__2_1a647ffc1eaa7eee4489c79841f9c5f227" kind="variable"><name>msg1</name></member>
+    <member refid="namespacemode__2_1aeb5c0b024b9a96812b903a021c64bef5" kind="variable"><name>msg2</name></member>
+    <member refid="namespacemode__2_1aca1ab58ed53faf6aef4c4309f76017ca" kind="variable"><name>currentmode</name></member>
+    <member refid="namespacemode__2_1a5e3e0001b5515e43af0b90a49c771a94" kind="variable"><name>done_cb</name></member>
+    <member refid="namespacemode__2_1a23b50130eac4433b40ba8fec110cf648" kind="variable"><name>goal_set</name></member>
+    <member refid="namespacemode__2_1a513331a9bc25610fe23e063a15d0191d" kind="variable"><name>isTimeout</name></member>
+    <member refid="namespacemode__2_1a53992be4fd1e8fecfa1f8eb6094cb9b3" kind="variable"><name>x_des</name></member>
+    <member refid="namespacemode__2_1ac8278ff0374fa7d876af7ceddaa9ec36" kind="variable"><name>y_des</name></member>
+    <member refid="namespacemode__2_1ad4107b0a1bf67d519d8c919473845418" kind="variable"><name>pos_received</name></member>
+    <member refid="namespacemode__2_1adfc3f43e6f214eadf8302f98c514d787" kind="function"><name>goalpos_callback</name></member>
+    <member refid="namespacemode__2_1a9b96fc998324cc948232ee49898b3001" kind="function"><name>callback_active</name></member>
+    <member refid="namespacemode__2_1a84b3755fab141d2a025189f8ad3f5614" kind="function"><name>callback_done</name></member>
+    <member refid="namespacemode__2_1a87a71bd931b6540b9a8f7fa8188ed2b6" kind="function"><name>callback_feedback</name></member>
+    <member refid="namespacemode__2_1a1af17dc0aecac6430202f39a12b7964b" kind="function"><name>set_action</name></member>
+    <member refid="namespacemode__2_1aaa97cb8cefc50d589c21a8e1d4d46f50" kind="function"><name>set_goal</name></member>
+    <member refid="namespacemode__2_1af001ec82bef079c8b790a13a66e94b71" kind="function"><name>my_clbk_timeout</name></member>
+    <member refid="namespacemode__2_1a706f8fa17c859073df14a5edbb36c03a" kind="function"><name>mode_callback</name></member>
+    <member refid="namespacemode__2_1aeed44e44b6fa4b37a096dfaa355b1875" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="namespacestd__srvs_1_1srv" kind="namespace"><name>std_srvs::srv</name>
+  </compound>
+  <compound refid="namespaceuser__interface" kind="namespace"><name>user_interface</name>
+    <member refid="namespaceuser__interface_1a2f76621b90797b5b6bba1cd22bc8c870" kind="variable"><name>isTimeout</name></member>
+    <member refid="namespaceuser__interface_1ae3d4a6a05731a62b3b77cd655a274e4e" kind="function"><name>timeout_callback</name></member>
+    <member refid="namespaceuser__interface_1ac26bdb296b6776907b72c17ce5a1b24a" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_c_make_lists_8txt" kind="file"><name>CMakeLists.txt</name>
+  </compound>
+  <compound refid="conf_8py" kind="file"><name>conf.py</name>
+  </compound>
+  <compound refid="assist__mode_8py" kind="file"><name>assist_mode.py</name>
+  </compound>
+  <compound refid="mode__2_8py" kind="file"><name>mode_2.py</name>
+  </compound>
+  <compound refid="user__interface_8py" kind="file"><name>user_interface.py</name>
+  </compound>
+  <compound refid="dir_53e6fa9553ac22a5646d2a2b2d7b97a1" kind="dir"><name>scripts</name>
+  </compound>
+</doxygenindex>
